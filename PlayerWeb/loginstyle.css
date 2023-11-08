@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+body{
+    background: #000;
+    font-family: 'Poppins', sans-serif;
+} 
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: centerF;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-e-senha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+}
+
+.entrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0.5rem;
+    border: none;
+    text-decoration: none;
+}
+
+.esqueceu-a-senha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: white;
+}
+
+.esqueceu-a-senha:hover{
+    color: #e11456;
+}
+
+.google{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+    border: #fff 0.1rem solid;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.google:hover{
+    color: #e11456;
+}
+
+.facebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+    border: #fff 0.1rem solid;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.facebook:hover{
+    color: #e11456;
+}
+
+.apple{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       font-size: 0.9rem;
+    color: #fff;
+    text-decoration: none;
+    border: #fff 0.1rem solid;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.apple:hover{
+    color: #e11456;
+}
+
+i{
+    padding: 0.5rem;
+}
+
+.nao-tem-cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 0.7rem;
+    text-decoration: none;
+    color: white;
+}
+
+.nao-tem-cadastro:hover{
+    color: #e11456;
+}
