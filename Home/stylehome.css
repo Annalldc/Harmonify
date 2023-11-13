@@ -29,14 +29,14 @@ body {
   text-decoration: none;
 }
 img {
-  width: 100%;
+  width: 45rem;
 }
 
 .botao {
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: 10rem;
+  bottom: 13rem;
 }
 
 .botao button {
@@ -135,11 +135,14 @@ footer p {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+  img{
+    width: 20rem;
+  }
   .botao {
     margin-top: 4.2rem; 
     margin-bottom: 1rem;
     text-align: center; 
-    padding: 10px;
+    padding: 3rem;
   }
 
   button {
@@ -177,9 +180,14 @@ footer p {
 
 /*tablet*/
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+  img{
+    width: 100%;
+  }
   .botao {
-    margin-top: -rem; 
+    margin-top: 4.2rem; 
     margin-bottom: 1rem;
+    text-align: center; 
+    padding: 1rem;
   }
   
   button {
