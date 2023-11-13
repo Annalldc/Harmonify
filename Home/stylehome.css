@@ -23,9 +23,11 @@ body {
   left: 50%; /* Posiciona o botão no meio da tela */
   transform: translateX(0%);
   margin-bottom: 1rem; 
-  
 }
 
+.logoFooter{
+  text-decoration: none;
+}
 img {
   width: 100%;
 }
