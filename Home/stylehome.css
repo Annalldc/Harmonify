@@ -68,6 +68,14 @@ img {
   bottom: 10rem;
 }
 
+.botao button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.botao button:hover {
+  transform: scale(1.2);
+}
+
 button {
   width: 15em;
   height: 3em;
