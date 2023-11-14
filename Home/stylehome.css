@@ -20,12 +20,12 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 50%; /* Posiciona o botão no meio da tela */
+  left: 50%;
   transform: translateX(0%);
-  margin-bottom: 1rem; 
+  margin-bottom: 10rem;
 }
 
-.logoFooter{
+.logoFooter {
   text-decoration: none;
 }
 img {
@@ -36,7 +36,8 @@ img {
   display: flex;
   justify-content: center;
   position: relative;
-  bottom: 13rem;
+  bottom: 23rem;
+  margin-bottom: 10rem;
 }
 
 .botao button {
@@ -48,34 +49,25 @@ img {
 }
 
 button {
-  width: 15em;
-  height: 3em;
-  border-radius: 2em;
+  font-family: "Baloo 2", sans-serif;
+  width: 9em;
+  height: 2em;
+  border-radius: 2rem;
   background-color: #e11456;
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
-  font-size: 1rem;
+  font-weight: 900;
+  font-size: 2rem;
   color: #000000;
   border: none;
 }
 
-
-
-
 /*____________________________footer_______________________________*/
 footer {
-  background-color: #141313;
+  background-color: #e11456;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  padding: 20px;
   font-family: "Baloo 2", sans-serif;
-  color: #d9d9d9;
-  position: relative;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
 
 footer #logoFooter {
@@ -86,9 +78,12 @@ footer #logoFooter {
 
 footer div {
   flex: 1;
-  font-size: 1.2em;
+  font-size: 1rem;
+  padding: 4rem;
 }
-
+footer h4 {
+  color: #d9d9d9;
+}
 footer div:last-child {
   text-align: center;
 }
@@ -103,7 +98,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #e11456;
+  color: #000000;
 }
 
 footer p {
@@ -111,13 +106,13 @@ footer p {
   text-align: center;
   margin-top: 20px;
   font-size: 0.6em;
+  color: #d9d9d9;
 }
 
 #icones {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2rem;
 }
 
 #icones a {
@@ -125,8 +120,7 @@ footer p {
   align-items: center;
   margin: 0 10px;
   text-decoration: none;
-  color: #ffffff;
-  padding: 10px;
+  padding: 1rem;
 }
 
 #icones img {
@@ -135,24 +129,25 @@ footer p {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-  img{
-    width: 20rem;
-  }
-  .botao {
-    margin-top: 4.2rem; 
-    margin-bottom: 1rem;
-    text-align: center; 
-    padding: 3rem;
+  #imgHome {
+    width: 100%;
+    position: relative;
+    top: 95px;
   }
 
   button {
     max-width: none;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    width: 9rem;
+    height: 2rem;
+    position: relative;
+    top: 13rem;
   }
-  
+
   footer div {
     flex: 0 0 100%;
     text-align: center;
+    padding: 1rem;
   }
 
   footer {
@@ -164,7 +159,6 @@ footer p {
     margin-bottom: 1rem;
   }
 
- 
   #icones a {
     margin: 0 5px;
   }
@@ -180,24 +174,24 @@ footer p {
 
 /*tablet*/
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  img{
-    width: 100%;
-  }
   .botao {
-    margin-top: 4.2rem; 
+    margin-top: 4.2rem;
     margin-bottom: 1rem;
-    text-align: center; 
-    padding: 1rem;
+    text-align: center;
   }
-  
+
   button {
     max-width: none;
     font-size: 1rem;
+    width: 14rem;
+    height: 3rem;
   }
-  
+
   footer div {
     flex: 0 0 100%;
     text-align: center;
+    padding: 1rem;
+    font-size: 27px;
   }
 
   footer {
@@ -214,7 +208,7 @@ footer p {
   }
 
   #icones img {
-    width: 20px;
+    width: 30px;
   }
 
   #linhaHorizontal {
