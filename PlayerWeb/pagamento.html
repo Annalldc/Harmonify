@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pagamento02.css">
+    <title>Faça seu pagamento</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-group">
+            <label for="name">Nome no Cartão:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="card-number">Número do Cartão:</label>
+            <input type="text" id="card-number" name="card-number" required>
+        </div>
+
+        <div class="payment-methods">
+            <button class="pix"><a href=""></a>PIX</button>
+            <button class="credito"><a href=""></a>Crédito</button>
+            <button class="debito"><a href=""></a>Débito</button>
+        </div>
+
+        <div class="form-group">
+            <label for="expiry">Data de Validade:</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+        </div>
+
+        <div class="form-group">
+            <label for="cvv">Código de Segurança (CVV):</label>
+            <input type="number" id="cvv" name="cvv" required>
+        </div>
+
+        <button class="pay-btn">Pagar</button>
+    </div>
+
+    <script src="pagamento03.js"></script>
+</body>
+
+</html>
