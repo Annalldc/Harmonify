@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Fredoka:wght@300;400&display=swap');
+
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
@@ -11,10 +14,13 @@ body {
 }
 
 h2 {
+  font-family: 'Baloo 2', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   color: #fff;
-  text-align: center;
-  font-size: 1.7rem;
-  margin-top: -16rem
+  font-size: 1.3rem;
+  margin-top: -16rem;
+  padding: 3rem;
+  letter-spacing: 7px;
 }
 
 .login-e-senha {

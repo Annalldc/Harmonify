@@ -1,82 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Fredoka:wght@300;400&display=swap');
 
 body {
-    background-color: #141313;
-    font-family: 'Poppins', sans-serif;
-    margin: 0; /* Remova as margens padrão do corpo para evitar espaçamentos extras */
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #141313;
 }
 
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%; /* Faça a largura ocupar 100% da tela */
-    max-width: 40rem; /* Defina uma largura máxima para evitar que o conteúdo se estenda demais em telas grandes */
-    margin: 8rem auto; /* Centralize o contêiner na tela e ajuste a margem superior */
-    padding: 1rem; /* Adicione algum preenchimento para espaçamento interno */
-    border-radius: 2rem;
+  display: grid;
+  place-items: center;
 }
 
-.logo img {
-    width: 20rem; /* Ajuste a largura conforme necessário */
-}
 h2 {
-    color: #e11456;
-}
-
-p {
-    color: #fff;
-    text-align: center; /* Centralize o texto */
+  font-family: 'Baloo 2', sans-serif;
+  font-family: 'Fredoka', sans-serif;
+  color: #d9d9d9;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: -16rem;
+  padding: 3rem;
+  letter-spacing: 7px;
 }
 
 input {
-    border-radius: 2rem;
-    margin-bottom: 0.5rem;
-    padding: 1.1rem;
-    width: 80%; /* Faça os campos de entrada ocuparem a largura total */
-    border: none;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 1.1rem;
+  width: 18rem;
+  height: 2rem;
+  border: none;
+  text-align: center;
 }
 
 input::placeholder {
-    font-family: 'Poppins', sans-serif;
-    color: #d9d9d9;
+  font-family: "Poppins", sans-serif;
+  color: #d9d9d9;
 }
 
 button {
-    background-color: #e11456;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 2rem;
-    margin-bottom: 0.5rem;
-    padding: 0.8rem;
-    width: 80%; /* Faça o botão ocupar a largura total */
-    font-weight: 900;
-    font-size: 1rem;
-    border: none;
-    margin-top: 1rem;
+  background-color: #e11456;
+  font-family: "Poppins", sans-serif;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+  width: 14rem;
+  height: 3.7rem;
+  font-weight: 900;
+  font-size: 1rem;
+  border: none;
+}
+p{
+    font-family: 'Baloo 2', sans-serif;
+    font-family: 'Fredoka', sans-serif;
+    color: #d9d9d9;
+    text-align: center;
 }
 
 button:hover {
-    color: #d9d9d9;
-    transform: scale(1.1);
+  color: #fff;
+  transform: scale(1.1);
 }
 
-@media only screen and (min-width: 320px) and (max-width: 768px){
-    .container {
-        margin-top: 4rem; /* Ajuste a margem superior para dispositivos menores */
-        margin-left: 1;
-        width: 80%;
-    }
-    input, button {
-        width: 80%; /* Faça os campos de entrada e o botão ocuparem a largura total */
-    }
-    img{
-        width: 24rem;
-    }
-}
+/* Adaptações para smartphones */
+@media only screen and (max-width: 480px) {
+  img{
+    width: 20rem;
+  }
+  h2 {
+    font-size: 0.80rem;  
+    margin-top: -9rem;
+    padding: 1rem;
+  }
 
+/* Adaptações para tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-    .container {
-        max-width: 80%; /* Reduza a largura máxima para telas de tablets */
-    }
+  h2 {
+    font-size: 1.2rem;
+  }
 }

@@ -6,6 +6,6 @@ function enviarEmail() {
     if (emailValido) {
       mensagemElemento.innerHTML = 'Um e-mail de redefinição foi enviado para ' + email;
     } else {
-      mensagemElemento.innerHTML = 'Por favor, informe um endereço de e-mail válido.';
+      mensagemElemento.innerHTML = 'POR FAVOR, INFORME UM ENDEREÇO DE E-MAIL VÁLIDO.';
     }
   }
