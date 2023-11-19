@@ -1,172 +1,144 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
-body{
-    background: #000;
-    font-family: 'Poppins', sans-serif;
-} 
-
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+body {
+  background: #000;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.container {
+  display: grid;
+  place-items: center;
 }
 
-h2{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-top: -16rem;
 }
 
-.login-e-senha{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0.5rem;
+.login-e-senha {
+  padding: 0.5rem;
 }
 
-input{
-    border-radius: 2rem;
-    margin-bottom: 0.5rem;
-    padding: 1.1rem;
-    width: 21rem;
-    border: none;
+input {
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 1.1rem;
+  width: 18rem;
+  height: 2rem;
+  border: none;
+  text-align: center;
 }
 
-input::placeholder{
-    font-family: 'Poppins', sans-serif;
-    color: #d9d9d9;
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #D9D9D9;
 }
 
-.entrar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0.5rem;
-    border: none;
-    text-decoration: none;
+.entrar {
+  flex-direction: column;
+  padding: 0.5rem;
+  border: none;
+  text-decoration: none;
+}
+.linha-horizontal {
+  border: 1px solid #FBFAFB; /* Cor e espessura da borda */
+  margin: 10px 0; /* Espaçamento acima e abaixo da linha */
+  width: 40%; /* Largura da linha */
 }
 
-button{
-    background-color: #e11456;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 2rem;
-    margin-bottom: 0.5rem;
-    padding: 0.8rem;
-    width: 13rem;
-    font-weight: 900;
-    font-size: 1rem;
-    border: none;
+button {
+  background-color: #e11456;
+  font-family: "Poppins", sans-serif;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+  width: 13rem;
+  font-weight: 900;
+  font-size: 1rem;
+  border: none;
 }
 
-button:hover{
-    color: #fff;
-    transform: scale(1.1);
+button:hover {
+  color: #fff;
+  transform: scale(1.1);
 }
 
-.esqueceu-a-senha{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.7rem;
-    text-decoration: none;
-    color: white;
+.esqueceu-a-senha {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: white;
 }
 
-.esqueceu-a-senha:hover{
-    color: #e11456;
+.esqueceu-a-senha:hover {
+  color: #e11456;
 }
 
-h4{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h4 {
+  color: #fff;
 }
 
-.google{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-    color: #fff;
-    text-decoration: none;
-    border: #fff 0.1rem solid;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    width: 15rem;
-    margin-left: 21rem;
+.google {
+  font-size: 0.9rem;
+  color: #fff;
+  text-decoration: none;
+  border: #fff 0.1rem solid;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 15rem;
 }
 
-.google:hover{
-    color: #e11456;
-    transform: scale(1.1);
-} 
-
-.facebook{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   font-size: 0.9rem;
-    color: #fff; 
-    text-decoration: none;
-    border: #fff 0.1rem solid;
-    border-radius: 1rem; 
-    padding: 0.5rem;
-    width: 15rem; 
-    margin-left: 21rem;
+.google:hover {
+  color: #e11456;
+  transform: scale(1.1);
+}
+.contas-container {
+  display: grid;
+  place-items: center;
 }
 
-.facebook:hover{
-    color: #e11456;
-    transform: scale(1.1);
+.facebook {
+  font-size: 0.9rem;
+  color: #fff;
+  text-decoration: none;
+  border: #fff 0.1rem solid;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 15rem;
 }
 
-.apple{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-    color: #fff;
-    text-decoration: none;
-    border: #fff 0.1rem solid;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    width: 15rem;
-    margin-left: 21rem;
+.facebook:hover {
+  color: #e11456;
+  transform: scale(1.1);
 }
 
-.apple:hover{
-    color: #e11456;
-    transform: scale(1.1);
+.apple {
+  font-size: 0.9rem;
+  color: #fff;
+  text-decoration: none;
+  border: #fff 0.1rem solid;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 15rem;
 }
 
-
-
-i{
-    padding: 0.5rem;
+.apple:hover {
+  color: #e11456;
+  transform: scale(1.1);
 }
 
-.nao-tem-cadastro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 0.7rem;
-    text-decoration: none;
-    color: white;
-    margin-top: 1rem;
+i {
+  padding: 0.5rem;
 }
 
-.nao-tem-cadastro:hover{
-    color: #e11456;
-} 
+.nao-tem-cadastro {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: white;
+  margin-top: 1rem;
+}
+
+.nao-tem-cadastro:hover {
+  color: #e11456;
+}
