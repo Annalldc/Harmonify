@@ -1,48 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
-* {
-  margin: 0;
-  box-sizing: border-box;
-  color: #d9d9d9;
-}
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Fredoka:wght@300;400&display=swap');
+
 body {
-  background: #000;
   font-family: "Poppins", sans-serif;
-}
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  margin: 0;
+  background-color: #141313;
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.container {
+  display: grid;
+  place-items: center;
 }
 
 h2 {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-family: 'Baloo 2', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   color: #e11456;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: -16rem;
+  padding: 3rem;
+  letter-spacing: 7px;
 }
 
-.email-e-telefone {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.login-e-senha {
   padding: 0.5rem;
+  margin-top: -7rem;
 }
 
 input {
   border-radius: 2rem;
   margin-bottom: 0.5rem;
   padding: 1.1rem;
-  width: 21rem;
+  width: 18rem;
+  height: 2rem;
   border: none;
+  text-align: center;
 }
 
 input::placeholder {
@@ -50,14 +43,17 @@ input::placeholder {
   color: #d9d9d9;
 }
 
-.avancar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.entrar {
   flex-direction: column;
   padding: 0.5rem;
   border: none;
   text-decoration: none;
+}
+
+.linha-horizontal {
+  border: 1px solid #d9d9d9;
+  margin: 10px 0;
+  width: 40%;
 }
 
 button {
@@ -66,7 +62,8 @@ button {
   border-radius: 2rem;
   margin-bottom: 0.5rem;
   padding: 0.8rem;
-  width: 13rem;
+  width: 14rem;
+  height: 3.7rem;
   font-weight: 900;
   font-size: 1rem;
   border: none;
@@ -77,23 +74,27 @@ button:hover {
   transform: scale(1.1);
 }
 
-h4 {
-  color: #fff;
+.email-e-telefone {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #fbfafb;
+  margin-top: -3rem;
 }
 
-i {
-  padding: 0.5rem;
+.esqueceu-a-senha:hover {
+  color: #e11456;
+}
+
+h4 {
+  color: #fbfafb;
 }
 
 .google {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #fff;
   text-decoration: none;
-  border: #fff 0.1rem solid;
-  border-radius: 1rem;
+  border: #d9d9d9 0.1rem solid;
+  border-radius: 2rem;
   padding: 0.5rem;
   width: 15rem;
 }
@@ -103,15 +104,18 @@ i {
   transform: scale(1.1);
 }
 
+.contas-container {
+  display: grid;
+  place-items: center;
+}
+
 .facebook {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.9rem;
+  text-align: center;
+  font-size: 0.8rem;
   color: #fff;
   text-decoration: none;
-  border: #fff 0.1rem solid;
-  border-radius: 1rem;
+  border: #d9d9d9 0.1rem solid;
+  border-radius: 2rem;
   padding: 0.5rem;
   width: 15rem;
 }
@@ -122,14 +126,11 @@ i {
 }
 
 .apple {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #fff;
   text-decoration: none;
-  border: #fff 0.1rem solid;
-  border-radius: 1rem;
+  border: #d9d9d9 1px solid;
+  border-radius: 2rem;
   padding: 0.5rem;
   width: 15rem;
 }
@@ -139,51 +140,44 @@ i {
   transform: scale(1.1);
 }
 
-.ja-tem-uma-conta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+i {
+  padding: 0.5rem;
+}
+
+.nao-tem-cadastro {
   font-size: 0.7rem;
   text-decoration: none;
   color: white;
-  margin-top: 0.9rem;
-  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
 }
 
-.ja-tem-uma-conta:hover {
+.nao-tem-cadastro:hover {
   color: #e11456;
 }
 
+/* Adaptações para smartphones */
 @media only screen and (max-width: 480px) {
-    img{
-        height: 23rem;
-    }
+  img{
+    width: 20rem;
+  }
+  h2 {
+    font-size: 0.80rem;  
+    margin-top: -9rem;
+    padding: 1rem;
+  }
 
-    body {
-        font-size: 14px;
-      }
-    
-      .container {
-        padding: 10px;
-      }
-    
-      h2 {
-        font-size: 1.3rem; 
-      }
-    
-      input {
-        width: 100%; 
-      }
-    
-      button {
-        width: 100%; 
-      }
-    
-      
-    }
+  .email-e-telefone {
+    margin-top: -1rem;
+  }
 
+  .linha-horizontal {
+    width: 20%;
+  }
+}
 
-/*tablet*/
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+/* Adaptações para tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  h2 {
+    font-size: 1.2rem;
+  }
 }

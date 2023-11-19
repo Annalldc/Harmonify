@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
 
 body {
-    background: #000;
+    background-color: #141313;
     font-family: 'Poppins', sans-serif;
     margin: 0; /* Remova as margens padrão do corpo para evitar espaçamentos extras */
 }
 
 .container {
-    background-color: #141313;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,8 +19,7 @@ body {
 }
 
 .logo img {
-    width: 2rem; /* Ajuste a largura conforme necessário */
-    height: 2rem; /* Ajuste a altura conforme necessário */
+    width: 20rem; /* Ajuste a largura conforme necessário */
 }
 h2 {
     color: #e11456;
