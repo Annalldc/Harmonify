@@ -92,6 +92,8 @@ h4 {
 }
 
 .google {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
   font-size: 0.8rem;
   color: #fff;
   text-decoration: none;
@@ -112,6 +114,8 @@ h4 {
 }
 
 .facebook {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
   text-align: center;
   font-size: 0.8rem;
   color: #fff;
@@ -128,6 +132,8 @@ h4 {
 }
 
 .apple {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
   font-size: 0.8rem;
   color: #fff;
   text-decoration: none;
