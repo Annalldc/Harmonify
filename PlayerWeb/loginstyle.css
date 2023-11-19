@@ -14,11 +14,12 @@ h2 {
   color: #fff;
   text-align: center;
   font-size: 1.7rem;
-  margin-top: -16rem;
+  margin-top: -16rem
 }
 
 .login-e-senha {
   padding: 0.5rem;
+  margin-top: -7rem;
 }
 
 input {
@@ -33,7 +34,7 @@ input {
 
 input::placeholder {
   font-family: "Poppins", sans-serif;
-  color: #D9D9D9;
+  color: #d9d9d9;
 }
 
 .entrar {
@@ -43,7 +44,7 @@ input::placeholder {
   text-decoration: none;
 }
 .linha-horizontal {
-  border: 1px solid #FBFAFB; /* Cor e espessura da borda */
+  border: 1px solid #D9D9D9; /* Cor e espessura da borda */
   margin: 10px 0; /* Espaçamento acima e abaixo da linha */
   width: 40%; /* Largura da linha */
 }
@@ -54,7 +55,8 @@ button {
   border-radius: 2rem;
   margin-bottom: 0.5rem;
   padding: 0.8rem;
-  width: 13rem;
+  width: 14rem;
+  height: 3.70rem;
   font-weight: 900;
   font-size: 1rem;
   border: none;
@@ -68,7 +70,7 @@ button:hover {
 .esqueceu-a-senha {
   font-size: 0.7rem;
   text-decoration: none;
-  color: white;
+  color: #fbfafb;
 }
 
 .esqueceu-a-senha:hover {
@@ -76,15 +78,15 @@ button:hover {
 }
 
 h4 {
-  color: #fff;
+  color: #fbfafb;
 }
 
 .google {
   font-size: 0.9rem;
   color: #fff;
   text-decoration: none;
-  border: #fff 0.1rem solid;
-  border-radius: 1rem;
+  border: #D9D9D9 0.1rem solid;
+  border-radius: 2rem;
   padding: 0.5rem;
   width: 15rem;
 }
@@ -99,11 +101,12 @@ h4 {
 }
 
 .facebook {
+  text-align: center;
   font-size: 0.9rem;
   color: #fff;
   text-decoration: none;
-  border: #fff 0.1rem solid;
-  border-radius: 1rem;
+  border: #D9D9D9 0.1rem solid;
+  border-radius: 2rem;
   padding: 0.5rem;
   width: 15rem;
 }
@@ -117,8 +120,8 @@ h4 {
   font-size: 0.9rem;
   color: #fff;
   text-decoration: none;
-  border: #fff 0.1rem solid;
-  border-radius: 1rem;
+  border: #d9d9d9 1px solid;
+  border-radius: 2rem;
   padding: 0.5rem;
   width: 15rem;
 }
@@ -141,4 +144,23 @@ i {
 
 .nao-tem-cadastro:hover {
   color: #e11456;
+}
+
+@media only screen and (max-width: 480px) {
+  h2 {
+    font-size: 1.5rem; 
+    margin-top: -12rem; 
+  }
+
+  .login-e-senha {
+    margin-top: -5rem;
+    margin-right: 0rem; 
+  }
+}
+
+/*tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  h2 {
+    font-size: 1.6rem; 
+  }
 }
