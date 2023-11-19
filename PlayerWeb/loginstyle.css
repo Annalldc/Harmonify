@@ -66,6 +66,8 @@ button {
   font-weight: 900;
   font-size: 1rem;
   border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
 button:hover {
@@ -95,6 +97,7 @@ h4 {
   border-radius: 2rem;
   padding: 0.5rem;
   width: 15rem;
+  transition: transform 0.3s ease-in-out;
 }
 
 .google:hover {
@@ -107,6 +110,7 @@ h4 {
 }
 
 .facebook {
+  transition: transform 0.3s ease-in-out;
   text-align: center;
   font-size: 0.9rem;
   color: #fff;
@@ -123,6 +127,7 @@ h4 {
 }
 
 .apple {
+  transition: transform 0.3s ease-in-out;
   font-size: 0.9rem;
   color: #fff;
   text-decoration: none;
