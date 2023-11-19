@@ -1,57 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
-body{
+
+body {
     background: #000;
     font-family: 'Poppins', sans-serif;
+    margin: 0; /* Remova as margens padrão do corpo para evitar espaçamentos extras */
 }
 
-.container{
+.container {
     background-color: #141313;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50rem;
-    height: 50rem;
-    margin-left: 40rem;
-    margin-top: 8rem;
+    width: 100%; /* Faça a largura ocupar 100% da tela */
+    max-width: 40rem; /* Defina uma largura máxima para evitar que o conteúdo se estenda demais em telas grandes */
+    margin: 8rem auto; /* Centralize o contêiner na tela e ajuste a margem superior */
+    padding: 1rem; /* Adicione algum preenchimento para espaçamento interno */
     border-radius: 2rem;
 }
 
-h2{
+h2 {
     color: #e11456;
 }
 
-p{
+p {
     color: #fff;
+    text-align: center; /* Centralize o texto */
 }
 
-input{
+input {
     border-radius: 2rem;
     margin-bottom: 0.5rem;
     padding: 1.1rem;
-    width: 21rem;
+    width: 80%; /* Faça os campos de entrada ocuparem a largura total */
     border: none;
 }
 
-input::placeholder{
+input::placeholder {
     font-family: 'Poppins', sans-serif;
     color: #d9d9d9;
 }
 
-button{
+button {
     background-color: #e11456;
     font-family: 'Poppins', sans-serif;
     border-radius: 2rem;
     margin-bottom: 0.5rem;
     padding: 0.8rem;
-    width: 13rem;
+    width: 80%; /* Faça o botão ocupar a largura total */
     font-weight: 900;
     font-size: 1rem;
     border: none;
     margin-top: 1rem;
 }
 
-button:hover{
+button:hover {
     color: #fff;
     transform: scale(1.1);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px){
+    .container {
+        margin-top: 4rem; /* Ajuste a margem superior para dispositivos menores */
+        margin-left: 1;
+        width: 80%;
+    }
+    input, button {
+        width: 80%; /* Faça os campos de entrada e o botão ocuparem a largura total */
+    }
+    img{
+        width: 24rem;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        max-width: 80%; /* Reduza a largura máxima para telas de tablets */
+    }
 }
