@@ -19,6 +19,10 @@ body {
     border-radius: 2rem;
 }
 
+.logo img {
+    width: 2rem; /* Ajuste a largura conforme necessário */
+    height: 2rem; /* Ajuste a altura conforme necessário */
+}
 h2 {
     color: #e11456;
 }
@@ -55,7 +59,7 @@ button {
 }
 
 button:hover {
-    color: #fff;
+    color: #d9d9d9;
     transform: scale(1.1);
 }
 
