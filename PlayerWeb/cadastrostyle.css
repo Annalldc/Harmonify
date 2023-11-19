@@ -1,151 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
-body{
-    background: #000;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: #d9d9d9;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+body {
+  background: #000;
+  font-family: "Poppins", sans-serif;
 }
-
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-h2{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #e11456;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.email-e-telefone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0.5rem;
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-input{
-    border-radius: 2rem;
-    margin-bottom: 0.5rem;
-    padding: 1.1rem;
-    width: 21rem;
-    border: none;
+h2 {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e11456;
 }
 
-input::placeholder{
-    font-family: 'Poppins', sans-serif;
-    color: #d9d9d9;
+.email-e-telefone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
 }
 
-.avancar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0.5rem;
-    border: none;
-    text-decoration: none;
+input {
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 1.1rem;
+  width: 21rem;
+  border: none;
 }
 
-button{
-    background-color: #e11456;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 2rem;
-    margin-bottom: 0.5rem;
-    padding: 0.8rem;
-    width: 13rem;
-    font-weight: 900;
-    font-size: 1rem;
-    border: none;
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #d9d9d9;
 }
 
-button:hover{
-    color: #fff;
-    transform: scale(1.1);
+.avancar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem;
+  border: none;
+  text-decoration: none;
 }
 
-h4{
-    color: #fff;
+button {
+  background-color: #e11456;
+  font-family: "Poppins", sans-serif;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+  width: 13rem;
+  font-weight: 900;
+  font-size: 1rem;
+  border: none;
 }
 
-i{
-    padding: 0.5rem;
+button:hover {
+  color: #fff;
+  transform: scale(1.1);
 }
 
-.google{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-    color: #fff;
-    text-decoration: none;
-    border: #fff 0.1rem solid;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    width: 15rem;
+h4 {
+  color: #fff;
 }
 
-.google:hover{
-    color: #e11456;
-    transform: scale(1.1);
-} 
-
-.facebook{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-    color: #fff;
-    text-decoration: none;
-    border: #fff 0.1rem solid;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    width: 15rem;
+i {
+  padding: 0.5rem;
 }
 
-.facebook:hover{
-    color: #e11456;
-    transform: scale(1.1);
+.google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #fff;
+  text-decoration: none;
+  border: #fff 0.1rem solid;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 15rem;
 }
 
-.apple{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-    color: #fff;
-    text-decoration: none;
-    border: #fff 0.1rem solid;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    width: 15rem;
+.google:hover {
+  color: #e11456;
+  transform: scale(1.1);
 }
 
-.apple:hover{
-    color: #e11456;
-    transform: scale(1.1);
+.facebook {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #fff;
+  text-decoration: none;
+  border: #fff 0.1rem solid;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 15rem;
 }
 
-.ja-tem-uma-conta{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 0.7rem;
-    text-decoration: none;
-    color: white;
-    margin-top: 0.9rem;
-    font-family: 'Poppins', sans-serif;
+.facebook:hover {
+  color: #e11456;
+  transform: scale(1.1);
 }
 
-.ja-tem-uma-conta:hover{
-    color: #e11456;
+.apple {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #fff;
+  text-decoration: none;
+  border: #fff 0.1rem solid;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 15rem;
+}
+
+.apple:hover {
+  color: #e11456;
+  transform: scale(1.1);
+}
+
+.ja-tem-uma-conta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: white;
+  margin-top: 0.9rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.ja-tem-uma-conta:hover {
+  color: #e11456;
+}
+
+@media only screen and (max-width: 480px) {
+    img{
+        height: 23rem;
+    }
+
+    body {
+        font-size: 14px;
+      }
+    
+      .container {
+        padding: 10px;
+      }
+    
+      h2 {
+        font-size: 1.3rem; 
+      }
+    
+      input {
+        width: 100%; 
+      }
+    
+      button {
+        width: 100%; 
+      }
+    
+      
+    }
+
+
+/*tablet*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
 }
