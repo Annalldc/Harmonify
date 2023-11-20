@@ -10,6 +10,7 @@ body {
 .container {
   display: grid;
   place-items: center;
+  margin-bottom: 6rem;
 }
 
 h2 {

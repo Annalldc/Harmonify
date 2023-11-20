@@ -13,6 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 6rem;
 }
 
 .logo {
@@ -85,6 +86,7 @@ button {
   font-weight: 900;
   font-size: 1rem;
   border: none;
+  cursor: pointer;
 }
 button:hover {
   color: #fff;

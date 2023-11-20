@@ -1,24 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 body {
-  background-color: black;
+  background-color: #141313;
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
-  padding: 20px;
   background-color: #141313;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  margin-top: 50px;
+  margin-top: 12rem;
 }
 
 .form-group {
   margin-bottom: 20px;
-  color: #D9D9D9;
+  color: #d9d9d9;
 }
 
 label {
@@ -33,49 +32,57 @@ input[type="number"] {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 5px;
   margin-top: 5px;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+}
+
+.pag{
+  background-color: #e11456;
+  color: #fff;
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 1.7rem;
+  text-align: center; 
+  height: 1.40rem;
+  width: 5rem;
 }
 
 .payment-methods {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
-}
-
-.payment-method {
-  flex: 1;
-  padding: 20px;
-  text-align: center;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.payment-method.selected {
-  background-color: #E11456;
-  color: #fff;
+  margin-bottom: 30px;
+  padding: 15px 30px;
 }
 
 .pay-btn {
   background-color: #e11456;
   color: #fff;
   border: none;
-  padding: 15px 30px;
-  font-size: 18px;
+  font-size: 15px;
   cursor: pointer;
   border-radius: 1.7rem;
+  height: 3rem;
+  width: 9rem;
 }
 
-.pay-btn:hover{
-    color: #FF0052;
+.pay-btn:hover {
+  color: #ff0052;
 }
 
-@media (max-width: 768px) {
-  .payment-methods {
-    flex-direction: column;
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 80%;
+    margin-top: 4rem;
   }
-  .payment-method {
-    margin-bottom: 10px;
+}
+
+/* Adaptações para tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin-top: 5rem;
   }
 }
