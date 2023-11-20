@@ -46,6 +46,7 @@ img {
 
 .botao button:hover {
   transform: scale(1.2);
+  color: #d9d9d9;
 }
 
 button {
@@ -56,7 +57,7 @@ button {
   background-color: #e11456;
   font-weight: 900;
   font-size: 2rem;
-  color: #d9d9d9;
+  color: #000000;
   border: none;
 }
 
