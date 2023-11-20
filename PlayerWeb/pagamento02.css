@@ -4,6 +4,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
+  text-align: center; /* Centraliza o conteúdo na horizontal */
+  display: flex;
+  align-items: center; /* Centraliza na vertical */
+  justify-content: center; /* Centraliza na horizontal */
 }
 
 .container {
@@ -38,16 +42,21 @@ input[type="number"] {
   padding: 0.8rem;
 }
 
-.pag{
+.pag {
   background-color: #e11456;
-  color: #fff;
+  color: #141313;
   border: none;
   font-size: 12px;
   cursor: pointer;
   border-radius: 1.7rem;
-  text-align: center; 
-  height: 1.40rem;
+  text-align: center;
+  height: 1.4rem;
   width: 5rem;
+  transition: transform 0.3s ease;
+}
+.pag:hover{ 
+  color: #d9d9d9;
+  transform: scale(1.1);
 }
 
 .payment-methods {
@@ -59,17 +68,19 @@ input[type="number"] {
 
 .pay-btn {
   background-color: #e11456;
-  color: #fff;
+  color: #141313;
   border: none;
   font-size: 15px;
   cursor: pointer;
   border-radius: 1.7rem;
   height: 3rem;
-  width: 9rem;
+  width: 25rem;
+  transition: transform 0.3s ease;
 }
 
 .pay-btn:hover {
-  color: #ff0052;
+  color: #d9d9d9;
+  transform: scale(1.1);
 }
 
 @media only screen and (max-width: 480px) {
@@ -77,7 +88,15 @@ input[type="number"] {
     width: 80%;
     margin-top: 4rem;
   }
-}
+  .pay-btn {
+    width: 14rem;
+  }
+
+  .payment-methods {
+    margin-bottom: 20px;
+    gap: 10px; 
+  }
+  }
 
 /* Adaptações para tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
