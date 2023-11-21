@@ -11,10 +11,6 @@ body {
   display: grid;
   place-items: center;
 }
-#email{
-  margin-top: -12rem;
-
-}
 
 h2 {
   font-family: 'Baloo 2', sans-serif;

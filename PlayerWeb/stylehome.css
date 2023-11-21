@@ -63,7 +63,7 @@ button {
 
 /*____________________________footer_______________________________*/
 footer {
-  background-color: #e11456;
+  background-color: #141313;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,7 +99,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #000000;
+  color: #e11456;
 }
 
 footer p {

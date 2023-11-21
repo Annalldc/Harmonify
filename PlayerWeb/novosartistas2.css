@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Fredoka:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Fredoka:wght@300;400&display=swap");
 
 body {
   font-family: "Poppins", sans-serif;
@@ -14,8 +14,8 @@ body {
 }
 
 h2 {
-  font-family: 'Baloo 2', sans-serif;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Baloo 2", sans-serif;
+  font-family: "Fredoka", sans-serif;
   color: #fff;
   font-size: 1.3rem;
   margin-top: -16rem;
@@ -40,7 +40,7 @@ button {
   margin-bottom: 0.5rem;
   padding: 0.8rem;
   width: 14rem;
-  height: 3.70rem;
+  height: 3.7rem;
   font-weight: 900;
   font-size: 1rem;
   border: none;
@@ -54,12 +54,12 @@ button:hover {
 }
 
 @media only screen and (max-width: 480px) {
-  img{
+  img {
     width: 20rem;
   }
   h2 {
     text-align: center;
-    font-size: 0.80rem;  
+    font-size: 0.8rem;
     margin-top: -12rem;
     padding: 1rem;
   }
@@ -68,6 +68,7 @@ button:hover {
 /*tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   h2 {
-    font-size: 1.6rem; 
+    font-size: 1.6rem;
+    text-align: center;
   }
 }

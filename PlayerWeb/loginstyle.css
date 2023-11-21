@@ -24,11 +24,6 @@ h2 {
   letter-spacing: 7px;
 }
 
-.login-e-senha {
-  padding: 0.5rem;
-  margin-top: -7rem;
-}
-
 input {
   border-radius: 2rem;
   margin-bottom: 0.5rem;
@@ -167,10 +162,6 @@ i {
     font-size: 0.80rem;  
     margin-top: -12rem;
     padding: 1rem;
-  }
-
-  .login-e-senha {
-    margin-top: -5rem;
   }
 }
 
