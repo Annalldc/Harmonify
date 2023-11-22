@@ -260,3 +260,17 @@ body {
     border-radius: 40px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: none; /* Oculta a barra lateral em telas menores */
+    }
+    .spotify-playlists {
+        padding: 20px 40px;
+        overflow-x: auto;
+    }
+
+    .main-container {
+        margin-left: 0; /* Remove a margem à esquerda para expandir o conteúdo */
+    }
+}
