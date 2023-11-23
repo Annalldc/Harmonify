@@ -9,7 +9,11 @@ body {
     background-color: #000;
     font-family: 'Montserrat', sans-serif;
 }
-
+#felipe{
+    color: #f2f2f2;
+    position: relative;
+    right: 2px;
+}
 .sidebar {
     position: fixed;
     left: 0;
@@ -19,7 +23,9 @@ body {
     background-color: #000000;
     padding: 24px;
 }
-
+#perfil{
+    height: 3rem;
+}
 .sidebar .logo img {
     width: 15em;
     border-radius: 50%;
