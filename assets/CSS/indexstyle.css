@@ -43,16 +43,19 @@ img {
 .botao button {
   transition: transform 0.3s ease-in-out;
 }
-
+.botao button:hover a {
+  color: #ffffff; /* Cor branca */
+  text-decoration: none;
+}
 .botao button:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   color: #d9d9d9;
   text-decoration: none;
 }
 
-#entrar {
+a {
   text-decoration: none;
-  color: #d9d9d9;
+  color: #141313;
 }
 
 button {
