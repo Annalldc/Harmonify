@@ -47,6 +47,12 @@ img {
 .botao button:hover {
   transform: scale(1.2);
   color: #d9d9d9;
+  text-decoration: none;
+}
+
+#entrar {
+  text-decoration: none;
+  color: #d9d9d9;
 }
 
 button {
