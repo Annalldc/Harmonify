@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Fredoka:wght@300;400&display=swap");
 body {
   background-color: #141313;
@@ -82,10 +80,12 @@ button {
   border-radius: 2rem;
   margin-bottom: 0.5rem;
   padding: 0.8rem;
-  width: 13rem;
+  width: 14rem;
+  height: 3.7rem;
   font-weight: 900;
   font-size: 1rem;
   border: none;
+  transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
 button:hover {
