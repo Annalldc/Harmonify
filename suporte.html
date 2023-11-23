@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/CSS/suporte2.css">
-    <link rel="icon" href="images/icone5-png.png" >
+    <link rel="icon" href="images/icone5-png.png">
     <title>Document</title>
 </head>
+
 <body>
     <div class="container">
-         <!-- Logo -->
-         <div class="logo">
+        <!-- Logo -->
+        <div class="logo">
             <a href="/index.html">
                 <img src="/assets/IMG/icone-png.png" alt="">
             </a>
@@ -25,8 +27,18 @@
             <textarea cols="30" rows="20" placeholder="Informe o problema..."></textarea>
         </div>
 
-        <button class="btn">ENVIAR</button>
+        <button class="btn" onclick="enviarFormulario()">ENVIAR</button>
     </div>
-    
+
+    <script>
+        function enviarFormulario() {
+            // Lógica para processar o formulário
+            alert('Formulário enviado com sucesso! Entraremos em contato em breve.');
+            // Redirecionar ou realizar outras ações conforme necessário
+            // window.location.href = 'pagina_sucesso.html';
+            window.location.href = 'login.html';
+        }
+    </script>
 </body>
+
 </html>

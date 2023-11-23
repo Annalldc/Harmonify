@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/icone5-png.png" >
+    <link rel="icon" href="images/icone5-png.png">
     <link rel="stylesheet" href="/assets/CSS/esqueceuSenha.css">
     <title>Esqueceu a senha</title>
 </head>
+
 <body>
     <div class="container">
         <div class="logo">
@@ -16,11 +18,21 @@
         </div>
         <h2>ESQUECEU A SENHA?</h2>
         <p>INFORME SEU ENDEREÇO DE E-MAIL PARA REDEFINIR A SENHA.</p>
-      
+
         <input type="email" id="email" placeholder="DIGITE SEU E-MAIL" required>
-        <button onclick="enviarEmail()">ENVIAR</button>
-      
+        <button onclick="realizarRecuperacaoSenha()">ENVIAR</button>
+
         <p id="mensagem"></p>
-<script src="esqueceuSenha.js"></script>      
+
+        <script>
+            function realizarRecuperacaoSenha() {
+                // Simular o envio de e-mail para recuperar a senha
+                alert('Enviaremos um e-mail para recuperar a senha, por favor, digite o seu login novamente');
+                // Redirecionar para a página de login
+                window.location.href = 'login.html';
+            }
+        </script>
+    </div>
 </body>
+
 </html>

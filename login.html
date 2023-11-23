@@ -8,49 +8,73 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" href="images/icone5-png.png" >
-        <link rel="stylesheet" href="/assets/CSS/loginstyle.css">
+    <link rel="icon" href="images/icone5-png.png">
+    <link rel="stylesheet" href="/assets/CSS/loginstyle.css">
     <title>Login</title>
 </head>
 
 <body>
-  <div class="container">
+    <div class="container">
 
         <div class="logo">
             <a href="/index.html">
                 <img src="/assets/IMG/icone-png.png" alt="">
             </a>
         </div>
-        
+
         <h2>ENTRAR NA HARMONIFY</h2>
-        
+
         <!-- Inputs de Login e Senha -->
         <div class="login-e-senha">
-            <input type="text" placeholder="LOGIN">
+            <input type="text" id="login" placeholder="LOGIN">
             <br>
-            <input type="password" placeholder="SENHA">
+            <input type="password" id="senha" placeholder="SENHA">
+            <br>
         </div>
-        
+
         <!-- Botão de entrar -->
         <div class="entrar">
-            <button class="">ENTRAR</button>
+            <button onclick="realizarLogin()">ENTRAR</button>
         </div>
-                
+
         <!-- Link de Esqueceu a senha -->
         <a class="esqueceu-a-senha" href="esqueceuSenha.html" target="_blank">ESQUECEU A SENHA?</a>
-        
+
         <hr class="linha-horizontal"><br>
         <!-- Inscrever-se de outras maneiras -->
         <div class="contas-container">
-            <a href="https://www.google.com/intl/pt-BR/gmail/about/" target="_blank" class="google"> <i class="fa-brands fa-google" style="color: #ffffff;"></i>CONTINUAR COM GOOGLE</a>
+            <a href="https://www.google.com/intl/pt-BR/gmail/about/" target="_blank" class="google"> <i
+                    class="fa-brands fa-google" style="color: #ffffff;"></i>CONTINUAR COM GOOGLE</a>
             <br>
-            <a href="https://www.facebook.com/?locale=pt_BR" class="facebook" target="_blank"><i target="_blank" class="fa-brands fa-facebook" style="color: #ffffff;"></i>CONTINUAR COM FACEBOOK</a>
+            <a href="https://www.facebook.com/?locale=pt_BR" class="facebook" target="_blank"><i
+                    target="_blank" class="fa-brands fa-facebook" style="color: #ffffff;"></i>CONTINUAR COM
+                FACEBOOK</a>
             <br>
-            <a href="https://idmsa.apple.com/IDMSWebAuth/signin?path=%2F%2Fcommunity%2Fapple_id%3Flogin%3Dtrue&language=BR-PT&instanceId=PT&appIdKey=529eb2b096d5a3d54162171f0f29ba797e602812660013123243e58bc7bedf56&rv=5" target="_blank" class="apple"><i class="fa-brands fa-apple" style="color: #ffffff;"></i>CONTINUAR COM APPLE</a>
+            <a
+                href="https://idmsa.apple.com/IDMSWebAuth/signin?path=%2F%2Fcommunity%2Fapple_id%3Flogin%3Dtrue&language=BR-PT&instanceId=PT&appIdKey=529eb2b096d5a3d54162171f0f29ba797e602812660013123243e58bc7bedf56&rv=5"
+                target="_blank" class="apple"><i class="fa-brands fa-apple" style="color: #ffffff;"></i>CONTINUAR COM
+                APPLE</a>
         </div>
         <!-- Link para quem não tem cadastro -->
-        <a href="cadastro.html"  class="nao-tem-cadastro">NÃO TEM UMA CONTA? CADASTRE-SE</a>
+        <a href="cadastro.html" class="nao-tem-cadastro">NÃO TEM UMA CONTA? CADASTRE-SE</a>
     </div>
+
+    <script>
+        function realizarLogin() {
+            // Obter o valor do campo de login
+            var login = document.getElementById('login').value;
+
+            // Verificar se o login é um e-mail do Gmail, Hotmail ou Outlook
+            if (login.endsWith('@gmail.com') || login.endsWith('@hotmail.com') || login.endsWith('@outlook.com')) {
+                // Simular um login bem-sucedido
+                alert('Login bem-sucedido!');
+                // Redirecionar para a página desejada (play.html)
+                window.location.href = 'play.html';
+            } else {
+                alert('Apenas e-mails do Gmail, Hotmail e Outlook são permitidos.');
+            }
+        }
+    </script>
 </body>
 
 </html>
