@@ -1,34 +1,217 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+  color: #d9d9d9;
+}
+
+body {
+  background-color: #000000;
+  font-family: "Baloo 2", sans-serif;
+}
+
 body {
   background: black;
+  margin: 0;
+  padding: 0;
 }
 
 .gif {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
-  max-height: 100%;
+  left: 50%;
+  transform: translateX(0%);
+  margin-bottom: 10rem;
 }
 
-img{
-    width: 100%;
+.logoFooter {
+  text-decoration: none;
+}
+img {
+  width: 45rem;
 }
 
 .botao {
   display: flex;
   justify-content: center;
-  align-items: center;
   position: relative;
-  bottom: 9rem;
+  bottom: 23rem;
+  margin-bottom: 10rem;
+}
+
+.botao button {
+  transition: transform 0.3s ease-in-out;
+}
+
+.botao button:hover {
+  transform: scale(1.2);
 }
 
 button {
-  width: 15em;
-  height: 3em;
-  border-radius: 2em;
+  font-family: "Baloo 2", sans-serif;
+  width: 9em;
+  height: 2em;
+  border-radius: 2rem;
   background-color: #e11456;
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #d9d9d9;
+  border: none;
+}
+
+/*____________________________footer_______________________________*/
+footer {
+  background-color: #e11456;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: "Baloo 2", sans-serif;
+}
+
+footer #logoFooter {
+  height: auto;
+  width: 150px;
+  margin-top: 15px;
+}
+
+footer div {
+  flex: 1;
   font-size: 1rem;
+  padding: 4rem;
+}
+footer h4 {
+  color: #d9d9d9;
+}
+footer div:last-child {
+  text-align: center;
+}
+
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0.8em 0;
+  font-size: 0.8em;
+  line-height: 1.5;
+  color: #d9d9d9;
+}
+
+footer a:hover {
+  color: #000000;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.6em;
+  color: #d9d9d9;
+}
+
+#icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#icones a {
+  display: flex;
+  align-items: center;
+  margin: 0 13px;
+  text-decoration: none;
+  padding: 1rem;
+}
+
+#icones img {
+  width: 35px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  #imgHome {
+    width: 100%;
+    position: relative;
+    top: 95px;
+  }
+
+  button {
+    max-width: none;
+    font-size: 0.8rem;
+    width: 9rem;
+    height: 2rem;
+    position: relative;
+    top: 13rem;
+  }
+
+  footer div {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 12px;
+  }
+
+  footer {
+    padding: 10px;
+    position: relative;
+  }
+
+  #icones {
+    margin-bottom: 1rem;
+  }
+
+  #icones a {
+    margin: 0 5px;
+  }
+
+  #icones img {
+    width: 25px;
+  }
+
+  #linhaHorizontal {
+    display: none;
+  }
+}
+
+/*tablet*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .botao {
+    margin-top: 4.2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  button {
+    max-width: none;
+    font-size: 1rem;
+    width: 14rem;
+    height: 3rem;
+  }
+
+  footer div {
+    flex: 0 0 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 18px;
+  }
+
+  footer {
+    padding: 10px;
+    position: relative;
+  }
+
+  #icones {
+    margin-bottom: 1rem;
+  }
+
+  #icones a {
+    margin: 0 5px;
+  }
+
+  #icones img {
+    width: 40px;
+  }
+
+  #linhaHorizontal {
+    display: none;
+  }
 }
