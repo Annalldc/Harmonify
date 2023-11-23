@@ -1,57 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
-body{
-    background: #000;
-    font-family: 'Poppins', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Fredoka:wght@300;400&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #141313;
 }
 
-.container{
-    background-color: #141313;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 50rem;
-    height: 50rem;
-    margin-left: 40rem;
-    margin-top: 8rem;
-    border-radius: 2rem;
+.container {
+  display: grid;
+  place-items: center;
 }
 
-h2{
-    color: #e11456;
+h2 {
+  font-family: 'Baloo 2', sans-serif;
+  font-family: 'Fredoka', sans-serif;
+  color: #d9d9d9;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: -16rem;
+  padding: 3rem;
+  letter-spacing: 7px;
 }
 
+input {
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 1.1rem;
+  width: 18rem;
+  height: 2rem;
+  border: none;
+  text-align: center;
+}
+
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #d9d9d9;
+}
+
+button {
+  background-color: #e11456;
+  font-family: "Poppins", sans-serif;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+  width: 14rem;
+  height: 3.7rem;
+  font-weight: 900;
+  font-size: 1rem;
+  border: none;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
 p{
-    color: #fff;
-}
-
-input{
-    border-radius: 2rem;
-    margin-bottom: 0.5rem;
-    padding: 1.1rem;
-    width: 21rem;
-    border: none;
-}
-
-input::placeholder{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Baloo 2', sans-serif;
+    font-family: 'Fredoka', sans-serif;
     color: #d9d9d9;
+    text-align: center;
 }
 
-button{
-    background-color: #e11456;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 2rem;
-    margin-bottom: 0.5rem;
-    padding: 0.8rem;
-    width: 13rem;
-    font-weight: 900;
-    font-size: 1rem;
-    border: none;
-    margin-top: 1rem;
+button:hover {
+  color: #fff;
+  transform: scale(1.1);
 }
 
-button:hover{
-    color: #fff;
-    transform: scale(1.1);
+/* Adaptações para smartphones */
+@media only screen and (max-width: 480px) {
+  img{
+    width: 20rem;
+  }
+  h2 {
+    font-size: 0.80rem;  
+    margin-top: -9rem;
+    padding: 1rem;
+  }
+
+/* Adaptações para tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+}
 }

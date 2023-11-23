@@ -4,49 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/CSS/loginstyle.css">
+    <link rel="stylesheet" href="loginstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="icon" href="./assets/IMG/icone5-png.png" >
+        <link rel="icon" href="images/icone5-png.png" >
+        <link rel="stylesheet" href="/assets/CSS/loginstyle.css">
     <title>Login</title>
 </head>
 
 <body>
-    <div class="container"></div>
-    <div class="logo">
-        <img src="./assets/IMG/icone-png.png" alt="">
-    </div>
+  <div class="container">
 
-    <h2>Entrar na Harmonify</h2>
-
-    <!-- Inputs de Login e Senha -->
-    <div class="login-e-senha">
-        <input type="text" placeholder="Login">
-        <br>
-        <input type="password" placeholder="Senha">
-    </div>
-
-    <!-- Botão de entrar -->
-    <div class="entrar">
-        <button class="">Entrar</button>
-    </div>
-
-    <!-- Link de Esqueceu a senha -->
-    <a class="esqueceu-a-senha" href="esqueceuSenha.html" target="_blank">Esqueceu a senha?</a>
-
-    <!-- Nada de impotante, somente o OU -->
-    <h4>OU</h4>
-
-    <!-- Inscrever-se de outras maneiras -->
-    <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&oq=goo&gs_lcrp=EgZjaHJvbWUqFQgCEC4YQxiDARjHARixAxjRAxiKBTIGCAAQRRg5MgsIARBFGCcYOxiKBTIVCAIQLhhDGIMBGMcBGLEDGNEDGIoFMg8IAxAAGEMYgwEYsQMYigUyDwgEEAAYQxiDARixAxiKBTIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDI3MTFqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" target="_blank" class="google"> <i class="fa-brands fa-google" style="color: #ffffff;"></i>Inscrever-se com Google</a>
-    <br>
-    <a href="https://www.facebook.com/?locale=pt_BR" class="facebook" target="_blank"><i target="_blank" class="fa-brands fa-facebook" style="color: #ffffff;"></i>Inscrever-se com Facebook</a>
-    <br>
-    <a href="https://idmsa.apple.com/IDMSWebAuth/signin?path=%2F%2Fcommunity%2Fapple_id%3Flogin%3Dtrue&language=BR-PT&instanceId=PT&appIdKey=529eb2b096d5a3d54162171f0f29ba797e602812660013123243e58bc7bedf56&rv=5" target="_blank" class="apple"><i class="fa-brands fa-apple" style="color: #ffffff;"></i>Inscrever-se com a Apple</a>
-
-    <!-- Link para quem não tem cadastro -->
-    <a href="cadastro.html"  class="nao-tem-cadastro">Não tem uma conta?Cadastre-se</a>
+        <div class="logo">
+            <a href="/PlayerWeb/home.html">
+                <img src="/PlayerWeb/images/icone-png.png" alt="">
+            </a>
+        </div>
+        
+        <h2>ENTRAR NA HARMONIFY</h2>
+        
+        <!-- Inputs de Login e Senha -->
+        <div class="login-e-senha">
+            <input type="text" placeholder="LOGIN">
+            <br>
+            <input type="password" placeholder="SENHA">
+        </div>
+        
+        <!-- Botão de entrar -->
+        <div class="entrar">
+            <button class="">ENTRAR</button>
+        </div>
+                
+        <!-- Link de Esqueceu a senha -->
+        <a class="esqueceu-a-senha" href="esqueceuSenha.html" target="_blank">ESQUECEU A SENHA?</a>
+        
+        <hr class="linha-horizontal"><br>
+        <!-- Inscrever-se de outras maneiras -->
+        <div class="contas-container">
+            <a href="https://www.google.com/search?gs_ssp=eJzj4tTP1TcwMU02T1JgNGB0YPBiS8_PT89JBQBASQXT&q=google&oq=goo&gs_lcrp=EgZjaHJvbWUqFQgCEC4YQxiDARjHARixAxjRAxiKBTIGCAAQRRg5MgsIARBFGCcYOxiKBTIVCAIQLhhDGIMBGMcBGLEDGNEDGIoFMg8IAxAAGEMYgwEYsQMYigUyDwgEEAAYQxiDARixAxiKBTIGCAUQRRg8MgYIBhBFGDwyBggHEEUYPNIBCDI3MTFqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" target="_blank" class="google"> <i class="fa-brands fa-google" style="color: #ffffff;"></i>CONTINUAR COM GOOGLE</a>
+            <br>
+            <a href="https://www.facebook.com/?locale=pt_BR" class="facebook" target="_blank"><i target="_blank" class="fa-brands fa-facebook" style="color: #ffffff;"></i>CONTINUAR COM FACEBOOK</a>
+            <br>
+            <a href="https://idmsa.apple.com/IDMSWebAuth/signin?path=%2F%2Fcommunity%2Fapple_id%3Flogin%3Dtrue&language=BR-PT&instanceId=PT&appIdKey=529eb2b096d5a3d54162171f0f29ba797e602812660013123243e58bc7bedf56&rv=5" target="_blank" class="apple"><i class="fa-brands fa-apple" style="color: #ffffff;"></i>CONTINUAR COM APPLE</a>
+        </div>
+        <!-- Link para quem não tem cadastro -->
+        <a href="cadastro.html"  class="nao-tem-cadastro">NÃO TEM UMA CONTA? CADASTRE-SE</a>
     </div>
 </body>
 

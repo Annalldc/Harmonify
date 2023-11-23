@@ -1,172 +1,173 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
-body{
-    background: #000;
-    font-family: 'Poppins', sans-serif;
-} 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Fredoka:wght@300;400&display=swap');
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #141313;
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.container {
+  display: grid;
+  place-items: center;
+  margin-bottom: 6rem;
 }
 
-h2{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+h2 {
+  font-family: 'Baloo 2', sans-serif;
+  font-family: 'Fredoka', sans-serif;
+  color: #fff;
+  font-size: 1.3rem;
+  margin-top: -16rem;
+  padding: 3rem;
+  letter-spacing: 7px;
 }
 
-.login-e-senha{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0.5rem;
+input {
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 1.1rem;
+  width: 18rem;
+  height: 2rem;
+  border: none;
+  text-align: center;
 }
 
-input{
-    border-radius: 2rem;
-    margin-bottom: 0.5rem;
-    padding: 1.1rem;
-    width: 21rem;
-    border: none;
+input::placeholder {
+  font-family: "Poppins", sans-serif;
+  color: #d9d9d9;
 }
 
-input::placeholder{
-    font-family: 'Poppins', sans-serif;
-    color: #d9d9d9;
+.entrar {
+  flex-direction: column;
+  padding: 0.5rem;
+  border: none;
+  text-decoration: none;
+}
+.linha-horizontal {
+  border: 1px solid #D9D9D9; /* Cor e espessura da borda */
+  margin: 10px 0; /* Espaçamento acima e abaixo da linha */
+  width: 40%; /* Largura da linha */
 }
 
-.entrar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0.5rem;
-    border: none;
-    text-decoration: none;
+button {
+  background-color: #e11456;
+  font-family: "Poppins", sans-serif;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+  padding: 0.8rem;
+  width: 14rem;
+  height: 3.70rem;
+  font-weight: 900;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
 
-button{
-    background-color: #e11456;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 2rem;
-    margin-bottom: 0.5rem;
-    padding: 0.8rem;
-    width: 13rem;
-    font-weight: 900;
-    font-size: 1rem;
-    border: none;
+button:hover {
+  color: #fff;
+  transform: scale(1.1);
 }
 
-button:hover{
-    color: #fff;
-    transform: scale(1.1);
+.esqueceu-a-senha {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: #fbfafb;
 }
 
-.esqueceu-a-senha{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.7rem;
-    text-decoration: none;
-    color: white;
+.esqueceu-a-senha:hover {
+  color: #e11456;
 }
 
-.esqueceu-a-senha:hover{
-    color: #e11456;
+h4 {
+  color: #fbfafb;
 }
 
-h4{
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.google {
+  font-size: 0.9rem;
+  color: #fff;
+  text-decoration: none;
+  border: #D9D9D9 0.1rem solid;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  width: 15rem;
+  transition: transform 0.3s ease-in-out;
 }
 
-.google{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-    color: #fff;
-    text-decoration: none;
-    border: #fff 0.1rem solid;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    width: 15rem;
-    margin-left: 21rem;
+.google:hover {
+  color: #e11456;
+  transform: scale(1.1);
+}
+.contas-container {
+  display: grid;
+  place-items: center;
 }
 
-.google:hover{
-    color: #e11456;
-    transform: scale(1.1);
-} 
-
-.facebook{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   font-size: 0.9rem;
-    color: #fff; 
-    text-decoration: none;
-    border: #fff 0.1rem solid;
-    border-radius: 1rem; 
-    padding: 0.5rem;
-    width: 15rem; 
-    margin-left: 21rem;
+.facebook {
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fff;
+  text-decoration: none;
+  border: #D9D9D9 0.1rem solid;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  width: 15rem;
 }
 
-.facebook:hover{
-    color: #e11456;
-    transform: scale(1.1);
+.facebook:hover {
+  color: #e11456;
+  transform: scale(1.1);
 }
 
-.apple{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-    color: #fff;
-    text-decoration: none;
-    border: #fff 0.1rem solid;
-    border-radius: 1rem;
-    padding: 0.5rem;
-    width: 15rem;
-    margin-left: 21rem;
+.apple {
+  transition: transform 0.3s ease-in-out;
+  font-size: 0.9rem;
+  color: #fff;
+  text-decoration: none;
+  border: #d9d9d9 1px solid;
+  border-radius: 2rem;
+  padding: 0.5rem;
+  width: 15rem;
 }
 
-.apple:hover{
-    color: #e11456;
-    transform: scale(1.1);
+.apple:hover {
+  color: #e11456;
+  transform: scale(1.1);
 }
 
-
-
-i{
-    padding: 0.5rem;
+i {
+  padding: 0.5rem;
 }
 
-.nao-tem-cadastro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 0.7rem;
-    text-decoration: none;
-    color: white;
-    margin-top: 1rem;
+.nao-tem-cadastro {
+  font-size: 0.7rem;
+  text-decoration: none;
+  color: white;
+  margin-top: 1rem;
 }
 
-.nao-tem-cadastro:hover{
-    color: #e11456;
-} 
+.nao-tem-cadastro:hover {
+  color: #e11456;
+}
+
+@media only screen and (max-width: 480px) {
+  img{
+    width: 20rem;
+  }
+  h2 {
+    text-align: center;
+    font-size: 0.80rem;  
+    margin-top: -12rem;
+    padding: 1rem;
+  }
+}
+
+/*tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  h2 {
+    font-size: 1.6rem; 
+  }
+}
