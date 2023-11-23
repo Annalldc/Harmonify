@@ -11,7 +11,7 @@ body {
 }
 
 body {
-  background: black;
+  background: rgb(1, 1, 1);
   margin: 0;
   padding: 0;
 }
@@ -46,6 +46,7 @@ img {
 
 .botao button:hover {
   transform: scale(1.2);
+  color: #d9d9d9;
 }
 
 button {
@@ -56,13 +57,13 @@ button {
   background-color: #e11456;
   font-weight: 900;
   font-size: 2rem;
-  color: #d9d9d9;
+  color: #000000;
   border: none;
 }
 
 /*____________________________footer_______________________________*/
 footer {
-  background-color: #e11456;
+  background-color: #141313;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -98,7 +99,7 @@ footer a {
 }
 
 footer a:hover {
-  color: #000000;
+  color: #e11456;
 }
 
 footer p {
