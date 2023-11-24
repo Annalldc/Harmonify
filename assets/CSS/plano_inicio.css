@@ -95,6 +95,7 @@ button:hover {
   border-radius: 40px;
 }
 header {
+  font-family: "Baloo 2", sans-serif;
   background-color: #141313;
   display: flex;
   align-items: center;
@@ -298,5 +299,14 @@ footer p {
 
   #linhaHorizontal {
     display: none;
+  }
+  .d-md-none {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  /* Esconder a div com o logo e a navegação em telas menores que 801 pixels */
+  .header_links {
+    display: none !important;
   }
 }
