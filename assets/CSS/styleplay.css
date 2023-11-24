@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {
+    font-family: 'Poppins', sans-serif;
     padding: 0;
     margin: 0;
 }
 
 body {
     background-color: #000;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
-
+#felipe{
+    color: #f2f2f2;
+    position: relative;
+    right: 2px;
+}
 .sidebar {
     position: fixed;
     left: 0;
@@ -19,7 +24,9 @@ body {
     background-color: #000000;
     padding: 24px;
 }
-
+#perfil{
+    height: 3rem;
+}
 .sidebar .logo img {
     width: 15em;
     border-radius: 50%;
