@@ -260,3 +260,23 @@ body {
     border-radius: 40px;
     cursor: pointer;
 }
+
+
+#artist-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+
+  .artist-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .artist-image {
+    max-width: 100%;
+    height: auto;
+  }
