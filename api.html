@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harmonify Artist Search</title>
+  <title>Spotify Artist Search</title>
   <style>
 
 
-    body {
+body {
         background-color: #000;
         font-family: 'Montserrat', sans-serif;
         margin: 0;
@@ -51,36 +51,11 @@
     document.addEventListener('DOMContentLoaded', function () {
       const artistList = document.getElementById('artist-list');
       const searchInputField = document.getElementById('searchInput');
-      let accessToken = "";
-
-      function getToken() {
-        const clientId = '44447c40b5734ee7840b0b7e04f21afa';
-        const clientSecret = '4928096133c4412a8c6ad6336344e26f';
-
-        const requestOptions = {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-          },
-          body: `grant_type=client_credentials&client_id=${clientId}&client_secret=${clientSecret}`,
-        };
-
-        fetch('https://accounts.spotify.com/api/token', requestOptions)
-          .then(response => response.json())
-          .then(data => {
-            accessToken = data.access_token;
-            // Chama a função de pesquisa após obter o token
-            searchArtists();
-          })
-          .catch(error => {
-            console.error('Error retrieving token:', error);
-          });
-      }
 
       function searchArtists() {
         const searchInput = searchInputField.value;
         const market = 'ES';
-        
+        const accessToken = "BQB4Q0vCw_XQMhXHrVrvfYDq8J_cvCKfRlcYfxJqhBwnF9Gfm1S7ZaPtZ-mOmVjwYMU74evGNdPLSlIelyaXap1jfp_PxmIuJH0yxC22T7c_s_mhkeQ";
 
         const apiUrl = `https://api.spotify.com/v1/search?q=${searchInput}&type=artist&market=${market}`;
 
@@ -117,12 +92,7 @@
             artistList.appendChild(listItem);
           });
         })
-        .catch(error => {
-          console.error('Erro na requisição:', error)
-          getToken()
-          searchArtists()
-        }
-        );
+        .catch(error => console.error('Erro na requisição:', error));
       }
 
       // Adiciona um evento de clique ao botão de pesquisa
@@ -130,4 +100,5 @@
     });
   </script>
 </body>
+<!--https://accounts.spotify.com/api/token?grant_type=client_credentials&client_id=3fe7974f3e9047679c876c5599569df6&client_secret=59c76cb4259d4a63ad88ba39543aa12e-->
 </html>
