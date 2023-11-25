@@ -88,12 +88,25 @@
 
     function validateForm() {
         // (Restante do seu código para validação do formulário)
-        sendEmail();
+
+        // Exemplo de validação simples (substitua isso pela sua lógica de validação real)
+        var nameInput = document.getElementById('name');
+        var cardNumberInput = document.getElementById('card-number');
+        var expiryInput = document.getElementById('expiry');
+        var cvvInput = document.getElementById('cvv');
+
+        if (nameInput.value && cardNumberInput.value && expiryInput.value && cvvInput.value) {
+            // Todas as informações são válidas, redirecione para a página play.html
+            window.location.href = 'play.html';
+        } else {
+            // Informações inválidas, trate conforme necessário
+        }
     }
 
     function sendEmail() {
         // Lógica para enviar o e-mail
     }
+</script>
 </script>
 
 </body>
