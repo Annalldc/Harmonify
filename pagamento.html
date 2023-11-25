@@ -1,46 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pagamento</title>
     <link rel="stylesheet" href="assets/CSS/pagamento02.css">
-    <link rel="icon" href="./assets/IMG/icone5-png.png" >
-    <title>Faça seu pagamento</title>
+    <link rel="shortcut icon" href="assets/IMG/icone5-png.png" type="image/x-icon">
+    <style>
+        .error {
+            color: red;
+        }
+        
+        .hidden {
+            display: none;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="form-group">
-            <label for="name">Nome no Cartão:</label>
-            <input type="text" id="name" name="name" required>
-        </div>
 
-        <div class="form-group">
-            <label for="card-number">Número do Cartão:</label>
-            <input type="text" id="card-number" name="card-number" required>
-        </div>
-
-        <div class="payment-methods">
-            <button class="pag"><a href=""></a>PIX</button>
-            <button class="pag"><a href=""></a>CRÉDITO</button>
-            <button class="pag"><a href=""></a>DÉBITO</button>
-        </div>
-
-        <div class="form-group">
-            <label for="expiry">Data de Validade:</label>
-            <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
-        </div>
-
-        <div class="form-group">
-            <label for="cvv">Código de Segurança (CVV):</label>
-            <input type="number" id="cvv" name="cvv" required>
-        </div>
-
-        <button class="pay-btn">PAGAR</button>
+<div class="container">
+    <div class="form-group">
+        <label for="name">Nome no Cartão:</label>
+        <input type="text" id="name" name="name" required>
     </div>
 
-    <script src="pagamento03.js"></script>
-</body>
+    <div class="form-group">
+        <label for="card-number">Número do Cartão:</label>
+        <input type="text" id="card-number" name="card-number" required>
+    </div>
 
+    <div class="payment-methods">
+        <button class="pag" onclick="validatePayment('PIX')">PIX</button>
+        <button class="pag" onclick="validatePayment('CREDITO')">CRÉDITO</button>
+        <button class="pag" onclick="validatePayment('DEBITO')">DÉBITO</button>
+    </div>
+
+    <div class="form-group">
+        <label for="expiry">Data de Validade:</label>
+        <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+    </div>
+
+    <div class="form-group">
+        <label for="cvv">Código de Segurança (CVV):</label>
+        <input type="text" id="cvv" name="cvv" required>
+    </div>
+
+    <div id="qrcode-container" class="hidden">
+        <label for="qrcode">QR Code:</label>
+        <img id="qrcode" alt="QR Code">
+    </div>
+
+    <button class="pay-btn" onclick="validateForm()">PAGAR</button>
+</div>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+<script>
+    function validatePayment(paymentMethod) {
+        var qrContainer = document.getElementById('qrcode-container');
+        var cardInputs = document.querySelectorAll('.form-group:not(#qrcode-container)');
+
+        if (paymentMethod === 'PIX') {
+            // Ocultar campos do cartão
+            cardInputs.forEach(function(input) {
+                input.style.display = 'none';
+            });
+
+            // Exibir o QR code
+            qrContainer.style.display = 'block';
+
+            // Dados para o QR code (substitua pela URL ou dados relevantes)
+            var text = "https://exemplo.com/pix";
+
+            // Gerar o QR code usando a biblioteca qrcode.js
+            var qrCodeImg = document.getElementById('qrcode');
+            qrCodeImg.src = `https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=${encodeURIComponent(text)}`;
+        } else {
+            // Restaurar a exibição dos campos do cartão
+            cardInputs.forEach(function(input) {
+                input.style.display = 'block';
+            });
+
+            // Esconder o QR code para outras opções de pagamento
+            qrContainer.style.display = 'none';
+        }
+    }
+
+    function validateForm() {
+        // (Restante do seu código para validação do formulário)
+        sendEmail();
+    }
+
+    function sendEmail() {
+        // Lógica para enviar o e-mail
+    }
+</script>
+
+</body>
 </html>
