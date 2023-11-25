@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const searchInput = searchInputField.value;
     const market = "ES";
     const accessToken =
-      "BQCNeBK9EDDo4qQHAgC_HzqD5krfzv3bg-qhBzvtpKf_Jv7UIJ0T3QesKua4qsYvm0Fiy9vRcU_DOtKqIaf1nU7R-j8HlPCxQ-KCjAzeirlKjbDGzOU";
+    "BQBZ3SkbuqXkitGeRi-jRGfU2-URBphjSI7eALGx4TvGL7hffvVQ3RIRTsYKcWqbVIFjDLm3JvLUhBTOsjtnBM7eVEn1Emr37FWPp3LgFk85PVbKj2U";
 
     const apiUrl = `https://api.spotify.com/v1/search?q=${searchInput}&type=artist&market=${market}`;
 

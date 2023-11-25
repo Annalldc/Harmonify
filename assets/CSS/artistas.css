@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     color: aliceblue;
+    font-family: "Baloo 2", sans-serif;
 }
 
 header {
@@ -85,6 +86,10 @@ header {
   color: aliceblue;
 }
 
+.center {
+  text-align: center;
+}
+
 .artist-item {
   border: 1px solid #ddd;
   padding: 10px;
@@ -98,6 +103,65 @@ header {
   color: aliceblue;
 }
 
+footer {
+  background-color: #141313; /* Cor de fundo do rodapé, ajuste conforme necessário */
+  color: white; /* Cor do texto do rodapé, ajuste conforme necessário */
+  padding: 20px; /* Espaçamento interno do rodapé, ajuste conforme necessário */
+  text-align: center;
+  margin-top: auto; /* Mantém o rodapé no final da página */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+}
+footer #logoFooter {
+  height: auto;
+  width: 150px;
+  margin-top: 15px;
+}
+
+footer div {
+  font-size: 1.2em;
+}
+
+footer a {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0.7em 0;
+  font-size: 0.6em;
+  color: #d9d9d9;
+}
+
+footer a:hover {
+  color: #e11456;
+}
+
+footer p {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.6em;
+}
+
+#icones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+#icones a {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
+}
+
+#icones img {
+  width: 30px;
+  margin-right: 5px;
+}
 @media only screen and (max-width: 768px) {
     header {
       flex-direction: column;
