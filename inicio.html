@@ -12,26 +12,26 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <style>
 .banner {
-  width: 100%;
-  height: 70vh; /* Ajuste a altura conforme necessário */
   position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* proporção 16:9 para vídeos */
   overflow: hidden;
 }
 
 .video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 .video-container video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center; /* Você pode ajustar isso conforme necessário */
 }
-
-
 
     </style>
 </head>
