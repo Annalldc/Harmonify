@@ -18,13 +18,27 @@
 
         <!-- inputs -->
         <div class="inputs">
-            <input type="text" placeholder="NOME DA MUSICA"><br>
-            <input type="file" class="arquivo" placeholder="Adicione o arquivo MP3">
+            <input type="text" placeholder="NOME DA MUSICA" id="nomeMusica"><br>
+            <input type="file" class="arquivo" placeholder="Adicione o arquivo MP3" id="arquivoMP3">
         </div>
         <!-- botão -->
         <div class="btn">
-            <button>ENVIAR</button>
+            <button onclick="enviarArquivo()">ENVIAR</button>
         </div>
     </div>
+
+    <script>
+        function enviarArquivo() {
+            // Aqui você pode adicionar lógica para enviar o arquivo para a base de dados
+            // Exemplo: Envio para uma API fictícia
+            const nomeMusica = document.getElementById('nomeMusica').value;
+            const arquivoMP3 = document.getElementById('arquivoMP3').value;
+
+            // Aqui você deveria fazer uma chamada AJAX ou usar fetch para enviar os dados para o servidor
+            // e processar o upload do arquivo. Este exemplo mostra apenas um alerta simulado.
+            
+            alert(`Arquivo ${arquivoMP3} enviado para a base de dados com o nome da música ${nomeMusica}.`);
+        }
+    </script>
 </body>
 </html>

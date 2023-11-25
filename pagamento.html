@@ -10,7 +10,7 @@
         .error {
             color: red;
         }
-        
+
         .hidden {
             display: none;
         }
@@ -53,60 +53,56 @@
     <button class="pay-btn" onclick="validateForm()">PAGAR</button>
 </div>
 
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
 <script>
     function validatePayment(paymentMethod) {
         var qrContainer = document.getElementById('qrcode-container');
-        var cardInputs = document.querySelectorAll('.form-group:not(#qrcode-container)');
+        var qrCodeImg = document.getElementById('qrcode');
 
         if (paymentMethod === 'PIX') {
-            // Ocultar campos do cartão
-            cardInputs.forEach(function(input) {
-                input.style.display = 'none';
-            });
-
-            // Exibir o QR code
+            // Exibir o QR code quando a opção PIX for selecionada
             qrContainer.style.display = 'block';
 
             // Dados para o QR code (substitua pela URL ou dados relevantes)
             var text = "https://exemplo.com/pix";
 
-            // Gerar o QR code usando a biblioteca qrcode.js
-            var qrCodeImg = document.getElementById('qrcode');
+            // Gerar o QR code usando a API do Google Charts
             qrCodeImg.src = `https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=${encodeURIComponent(text)}`;
         } else {
-            // Restaurar a exibição dos campos do cartão
-            cardInputs.forEach(function(input) {
-                input.style.display = 'block';
-            });
-
             // Esconder o QR code para outras opções de pagamento
             qrContainer.style.display = 'none';
         }
     }
 
     function validateForm() {
-        // (Restante do seu código para validação do formulário)
+        var cardNumber = document.getElementById('card-number').value;
+        var expiry = document.getElementById('expiry').value;
+        var cvv = document.getElementById('cvv').value;
 
-        // Exemplo de validação simples (substitua isso pela sua lógica de validação real)
-        var nameInput = document.getElementById('name');
-        var cardNumberInput = document.getElementById('card-number');
-        var expiryInput = document.getElementById('expiry');
-        var cvvInput = document.getElementById('cvv');
+        // Expressões regulares para validação
+        var cardNumberRegex = /^[0-9]{16}$/; // Alterada para garantir que o número tenha 16 dígitos
+        var expiryRegex = /^(0[1-9]|1[0-2])\/\d{2}$/;
+        var cvvRegex = /^[0-9]{3}$/; // Alterada para garantir que o CVV tenha 3 dígitos
 
-        if (nameInput.value && cardNumberInput.value && expiryInput.value && cvvInput.value) {
-            // Todas as informações são válidas, redirecione para a página play.html
-            window.location.href = 'play.html';
-        } else {
-            // Informações inválidas, trate conforme necessário
+        // Realizando a validação
+        if (!cardNumberRegex.test(cardNumber)) {
+            alert('Número do Cartão inválido. Por favor, insira um número válido com 16 dígitos.');
+            return;
         }
-    }
 
-    function sendEmail() {
-        // Lógica para enviar o e-mail
+        if (!expiryRegex.test(expiry)) {
+            alert('Data de Validade inválida. Por favor, insira no formato MM/YY.');
+            return;
+        }
+
+        if (!cvvRegex.test(cvv)) {
+            alert('Código de Segurança (CVV) inválido. Por favor, insira um código válido com 3 dígitos.');
+            return;
+        }
+
+        // Se a validação passar, redirecione para a página desejada
+        alert('Formulário válido. Redirecionando para a página de player...');
+        window.location.href = 'play.html';
     }
-</script>
 </script>
 
 </body>
