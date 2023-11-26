@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/IMG/icone5-png.png">
-    <link rel="stylesheet" href="assets/CSS/esqueceuSenha.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/IMG/icone5-png.png" />
+    <link rel="stylesheet" href="assets/CSS/esqueceuSenha.css" />
     <title>Esqueceu a senha</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="logo">
-            <a href="/index.html">
-                <img src="/assets/IMG/icone-png.png" alt="">
-            </a>
-        </div>
-        <h2>ESQUECEU A SENHA?</h2>
-        <p>INFORME SEU ENDEREÇO DE E-MAIL PARA REDEFINIR A SENHA.</p>
+      <div class="logo">
+        <a href="/index.html">
+          <img src="/assets/IMG/icone-png.png" alt="" />
+        </a>
+      </div>
+      <h2>ESQUECEU A SENHA?</h2>
+      <p>INFORME SEU ENDEREÇO DE E-MAIL PARA REDEFINIR A SENHA.</p>
 
-        <input type="email" id="email" placeholder="DIGITE SEU E-MAIL" required>
-        <button onclick="realizarRecuperacaoSenha()">ENVIAR</button>
+      <input type="email" id="email" placeholder="DIGITE SEU E-MAIL" required />
+      <button onclick="realizarRecuperacaoSenha()">ENVIAR</button>
 
-        <p id="mensagem"></p>
+      <p id="mensagem"></p>
 
-        <script>
-            function realizarRecuperacaoSenha() {
-                // Simular o envio de e-mail para recuperar a senha
-                alert('Enviaremos um e-mail para recuperar a senha, por favor, digite o seu login novamente');
-                // Redirecionar para a página de login
-                window.location.href = 'login.html';
-            }
-        </script>
+      <script>
+        function realizarRecuperacaoSenha() {
+          // Simular o envio de e-mail para recuperar a senha
+          alert(
+            "Enviaremos um e-mail para recuperar a senha, por favor, digite o seu login novamente"
+          );
+          // Redirecionar para a página de login
+          window.location.href = "login.html";
+        }
+      </script>
     </div>
-</body>
-
+  </body>
 </html>

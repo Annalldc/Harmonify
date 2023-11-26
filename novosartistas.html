@@ -1,44 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="assets/CSS/novosartistas2.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/IMG/icone5-png.png" >
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="assets/CSS/novosartistas2.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/IMG/icone5-png.png" />
     <title>Novos Artistas</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <!-- Logo -->
-        <div class="logo">
-                <img src="/assets/IMG/icone-png.png" alt="">
-        </div>
+      <!-- Logo -->
+      <div class="logo">
+        <img src="/assets/IMG/icone-png.png" alt="" />
+      </div>
 
-        <h2>FAÇA PARTE DOS ARTISTAS HARMONIFY</h2>
+      <h2>FAÇA PARTE DOS ARTISTAS HARMONIFY</h2>
 
-        <!-- inputs -->
-        <div class="inputs">
-            <input type="text" placeholder="NOME DA MUSICA" id="nomeMusica"><br>
-            <input type="file" class="arquivo" placeholder="Adicione o arquivo MP3" id="arquivoMP3">
-        </div>
-        <!-- botão -->
-        <div class="btn">
-            <button onclick="enviarArquivo()">ENVIAR</button>
-        </div>
+      <!-- inputs -->
+      <div class="inputs">
+        <input type="text" placeholder="NOME DA MUSICA" id="nomeMusica" /><br />
+        <input
+          type="file"
+          class="arquivo"
+          placeholder="Adicione o arquivo MP3"
+          id="arquivoMP3"
+        />
+      </div>
+      <!-- botão -->
+      <div class="btn">
+        <button onclick="enviarArquivo()">ENVIAR</button>
+      </div>
     </div>
 
     <script>
-        function enviarArquivo() {
-            // Aqui você pode adicionar lógica para enviar o arquivo para a base de dados
-            // Exemplo: Envio para uma API fictícia
-            const nomeMusica = document.getElementById('nomeMusica').value;
-            const arquivoMP3 = document.getElementById('arquivoMP3').value;
+      function enviarArquivo() {
+        // Aqui você pode adicionar lógica para enviar o arquivo para a base de dados
+        // Exemplo: Envio para uma API fictícia
+        const nomeMusica = document.getElementById("nomeMusica").value;
+        const arquivoMP3 = document.getElementById("arquivoMP3").value;
 
-            // Aqui você deveria fazer uma chamada AJAX ou usar fetch para enviar os dados para o servidor
-            // e processar o upload do arquivo. Este exemplo mostra apenas um alerta simulado.
-            
-            alert(`Arquivo ${arquivoMP3} enviado para a base de dados com o nome da música ${nomeMusica}.`);
-        }
+        // Aqui você deveria fazer uma chamada AJAX ou usar fetch para enviar os dados para o servidor
+        // e processar o upload do arquivo. Este exemplo mostra apenas um alerta simulado.
+
+        alert(
+          `Arquivo ${arquivoMP3} enviado para a base de dados com o nome da música ${nomeMusica}.`
+        );
+      }
     </script>
-</body>
+  </body>
 </html>

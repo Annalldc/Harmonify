@@ -1,82 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pagamento</title>
-    <link rel="stylesheet" href="assets/CSS/pagamento02.css">
-    <link rel="shortcut icon" href="assets/IMG/icone5-png.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/CSS/pagamento02.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/IMG/icone5-png.png"
+      type="image/x-icon"
+    />
     <style>
-        .error {
-            color: red;
-        }
+      .error {
+        color: red;
+      }
 
-        .hidden {
-            display: none;
-        }
+      .hidden {
+        display: none;
+      }
     </style>
-</head>
-<body>
-
-<div class="container">
-    <div class="form-group">
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-group">
         <label for="name">Nome no Cartão:</label>
-        <input type="text" id="name" name="name" required>
-    </div>
+        <input type="text" id="name" name="name" required />
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <label for="card-number">Número do Cartão:</label>
-        <input type="text" id="card-number" name="card-number" required>
-    </div>
+        <input type="text" id="card-number" name="card-number" required />
+      </div>
 
-    <div class="payment-methods">
+      <div class="payment-methods">
         <button class="pag" onclick="validatePayment('PIX')">PIX</button>
-        <button class="pag" onclick="validatePayment('CREDITO')">CRÉDITO</button>
+        <button class="pag" onclick="validatePayment('CREDITO')">
+          CRÉDITO
+        </button>
         <button class="pag" onclick="validatePayment('DEBITO')">DÉBITO</button>
-    </div>
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <label for="expiry">Data de Validade:</label>
-        <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
-    </div>
+        <input
+          type="text"
+          id="expiry"
+          name="expiry"
+          placeholder="MM/YY"
+          required
+        />
+      </div>
 
-    <div class="form-group">
+      <div class="form-group">
         <label for="cvv">Código de Segurança (CVV):</label>
-        <input type="text" id="cvv" name="cvv" required>
-    </div>
+        <input type="text" id="cvv" name="cvv" required />
+      </div>
 
-    <div id="qrcode-container" class="hidden">
+      <div id="qrcode-container" class="hidden">
         <label for="qrcode">QR Code:</label>
-        <img id="qrcode" alt="QR Code">
+        <img id="qrcode" alt="QR Code" />
+      </div>
+
+      <button class="pay-btn" onclick="validateForm()">PAGAR</button>
     </div>
 
-    <button class="pay-btn" onclick="validateForm()">PAGAR</button>
-</div>
+    <script>
+      function validatePayment(paymentMethod) {
+        var qrContainer = document.getElementById("qrcode-container");
+        var qrCodeImg = document.getElementById("qrcode");
 
-<script>
-    function validatePayment(paymentMethod) {
-        var qrContainer = document.getElementById('qrcode-container');
-        var qrCodeImg = document.getElementById('qrcode');
+        if (paymentMethod === "PIX") {
+          // Exibir o QR code quando a opção PIX for selecionada
+          qrContainer.style.display = "block";
 
-        if (paymentMethod === 'PIX') {
-            // Exibir o QR code quando a opção PIX for selecionada
-            qrContainer.style.display = 'block';
+          // Dados para o QR code (substitua pela URL ou dados relevantes)
+          var text = "https://exemplo.com/pix";
 
-            // Dados para o QR code (substitua pela URL ou dados relevantes)
-            var text = "https://exemplo.com/pix";
-
-            // Gerar o QR code usando a API do Google Charts
-            qrCodeImg.src = `https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=${encodeURIComponent(text)}`;
+          // Gerar o QR code usando a API do Google Charts
+          qrCodeImg.src = `https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=${encodeURIComponent(
+            text
+          )}`;
         } else {
-            // Esconder o QR code para outras opções de pagamento
-            qrContainer.style.display = 'none';
+          // Esconder o QR code para outras opções de pagamento
+          qrContainer.style.display = "none";
         }
-    }
+      }
 
-    function validateForm() {
-        var cardNumber = document.getElementById('card-number').value;
-        var expiry = document.getElementById('expiry').value;
-        var cvv = document.getElementById('cvv').value;
+      function validateForm() {
+        var cardNumber = document.getElementById("card-number").value;
+        var expiry = document.getElementById("expiry").value;
+        var cvv = document.getElementById("cvv").value;
 
         // Expressões regulares para validação
         var cardNumberRegex = /^[0-9]{16}$/; // Alterada para garantir que o número tenha 16 dígitos
@@ -85,25 +98,30 @@
 
         // Realizando a validação
         if (!cardNumberRegex.test(cardNumber)) {
-            alert('Número do Cartão inválido. Por favor, insira um número válido com 16 dígitos.');
-            return;
+          alert(
+            "Número do Cartão inválido. Por favor, insira um número válido com 16 dígitos."
+          );
+          return;
         }
 
         if (!expiryRegex.test(expiry)) {
-            alert('Data de Validade inválida. Por favor, insira no formato MM/YY.');
-            return;
+          alert(
+            "Data de Validade inválida. Por favor, insira no formato MM/YY."
+          );
+          return;
         }
 
         if (!cvvRegex.test(cvv)) {
-            alert('Código de Segurança (CVV) inválido. Por favor, insira um código válido com 3 dígitos.');
-            return;
+          alert(
+            "Código de Segurança (CVV) inválido. Por favor, insira um código válido com 3 dígitos."
+          );
+          return;
         }
 
         // Se a validação passar, redirecione para a página desejada
-        alert('Formulário válido. Redirecionando para a página de player...');
-        window.location.href = 'play.html';
-    }
-</script>
-
-</body>
+        alert("Formulário válido. Redirecionando para a página de player...");
+        window.location.href = "play.html";
+      }
+    </script>
+  </body>
 </html>
