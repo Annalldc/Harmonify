@@ -85,8 +85,7 @@ input{
   border: none;
   text-align: center;
 }
-
-#pesquisa{
+button {
   background-color: #e11456;
   font-family: "Poppins", sans-serif;
   border-radius: 2rem;
@@ -99,7 +98,6 @@ input{
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
-
 .borda-topicos {
   display: inline-block;
   border: 20px solid #d9d9d9;
