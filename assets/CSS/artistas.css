@@ -80,12 +80,12 @@ input{
   border-radius: 2rem;
   margin-bottom: 0.5rem;
   padding: 1.1rem;
-  width: 18rem;
+  width: 30rem;
   height: 2rem;
   border: none;
   text-align: center;
 }
-button {
+#pesquisa{
   background-color: #e11456;
   font-family: "Poppins", sans-serif;
   border-radius: 2rem;
@@ -97,17 +97,21 @@ button {
   border: none;
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
+  transition: transform 0.8s;
+}
+#pesquisa:hover{
+  color: #d9d9d9;
+  transform: scale(1.3);
+
 }
 .borda-topicos {
   display: inline-block;
-  border: 20px solid #d9d9d9;
-  background-color: #d9d9d9;
-  border-radius: 1rem;
+  border: 20px solid #141313;
+  background-color: #141313;
+  border-radius: 2rem;
   padding: 2rem;
   width: 15rem;
   height: 10rem;
-  margin-top: 4rem;
-  margin-bottom: 5rem;
   text-decoration: none;
   overflow: hidden; /* Adicionado para evitar que a animação ultrapasse a borda */
   transition: transform 0.8s ease; 
@@ -121,7 +125,7 @@ button {
 
 .topico {
   text-align: center;
-  color: #000;
+  color: #d9d9d9;
 }
 
 #artist-list {
