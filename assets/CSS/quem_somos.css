@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&family=Fredoka:wght@300;400&display=swap');
+
+body {
+    background-color: #000;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    font-family: "Baloo 2", sans-serif;
+    justify-content: space-around;
+  }
+  
+  header {
+    font-family: "Baloo 2", sans-serif;
+    background-color: #141313;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+  .header_links a {
+    display: inline-block;
+    position: relative;
+    bottom: 40px;
+    right: 3rem;
+    transition: transform 0.8s;
+  }
+  
+  .header_links a:hover {
+    color: #e11456;
+    transform: scale(1.3);
+  }
+  .header_links a:hover::after {
+    right: 0;
+  }
+  
+  header img {
+    width: 150px;
+    margin-left: 30px;
+  }
+  
+  header a {
+    text-decoration: none;
+    margin: 1rem;
+    color: #d9d9d9;
+  }
+  
+  .header_links {
+    margin-left: auto;
+  }
+  
+  #linhaHorizontal {
+    border-right: 1px solid white;
+    padding: 3rem;
+    transition: none;
+    position: relative;
+    top: 15px;
+    right: 4rem;
+    margin-right: 50px;
+    transition: transform 10000s;
+  }
+  
+  nav.navbar.fixed-top {
+    display: none;
+  }
+  .offcanvas-body {
+    background-color: #000000;
+  }
+  .offcanvas-body .nav-item .nav-link {
+    color: #d9d9d9;
+  }
+  .offcanvas-body a:hover {
+    color: #e11456;
+  }
+  .offcanvas-body {
+    background-color: #141313;
+  }
+  .offcanvas-body .nav-item .nav-link {
+    color: #d9d9d9;
+    font-size: 17px;
+  }
+  #bordas{
+    text-align: center;
+  }
+
+  footer {
+    background-color: #141313; /* Cor de fundo do rodapé, ajuste conforme necessário */
+    color: white; /* Cor do texto do rodapé, ajuste conforme necessário */
+    padding: 20px; /* Espaçamento interno do rodapé, ajuste conforme necessário */
+    text-align: center;
+    margin-top: auto; /* Mantém o rodapé no final da página */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
+    font-family: "Baloo 2", sans-serif;
+  }
+  footer #logoFooter {
+    height: auto;
+    width: 150px;
+    margin-top: 15px;
+  }
+  
+  footer div {
+    font-size: 1.2em;
+  }
+  
+  footer a {
+    font-family: "Baloo 2", sans-serif;
+    display: inline-block;
+    text-decoration: none;
+    margin: 0.7em 0;
+    font-size: 0.6em;
+    color: #d9d9d9;
+  }
+  
+  footer a:hover {
+    color: #e11456;
+  }
+  
+  footer p {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.6em;
+  }
+  
+  #icones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  
+  #icones a {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px;
+  }
+  
+  #icones img {
+    width: 30px;
+    margin-right: 5px;
+  }
