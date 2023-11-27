@@ -113,6 +113,7 @@ header {
   padding: 5px;
 }
 .header_links a {
+  font-family: "Baloo 2", sans-serif;
   display: inline-block;
   position: relative;
   bottom: 40px;
