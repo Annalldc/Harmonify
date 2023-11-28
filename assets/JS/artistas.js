@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> home
 document.addEventListener("DOMContentLoaded", function () {
     // Função de pesquisa de artistas
     async function searchArtists() {
