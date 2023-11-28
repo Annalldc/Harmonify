@@ -76,7 +76,7 @@ nav.navbar.fixed-top {
   color: #d9d9d9;
   font-size: 17px;
 }
-#bordas{
+#bordas {
   text-align: center;
 }
 input {
@@ -138,6 +138,16 @@ input {
   color: #d9d9d9;
   padding-top: 3rem;
   cursor: pointer;
+}
+.play-symbol {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #e11456;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .center {
