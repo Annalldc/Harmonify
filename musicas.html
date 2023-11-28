@@ -13,7 +13,11 @@
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD
     <link rel="stylesheet" href="/assets/CSS//musicaAPI.css" />
+=======
+    <link rel="stylesheet" href="/assets/CSS/musicas.css" />
+>>>>>>> home
     <title>Artistas</title>
     <style></style>
   </head>
@@ -22,20 +26,14 @@
       <nav class="d-md-none ms-auto me-0">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"></a>
-       
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="25"
-              height="25"
-              fill="currentColor"
-              class="bi bi-justify"
-              viewBox="0 0 16 16"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
-              />
-            </svg>
+          <button
+          class="navbar-toggler fixed-hamburger"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+          </svg>
           </button>
           <div
             class="offcanvas offcanvas-end"
@@ -54,12 +52,8 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="/inicio.html"
-                    >INICIO</a
-                  >
+                  <a class="nav-link active" aria-current="page" href="/artistasAPI.html"
+                    >ARTISTAS</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href=""
@@ -67,13 +61,12 @@
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/artistasAPI.html">ARTISTAS</a>
+                  <a class="nav-link" href="/inicio.html">INÍCIO</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/login.html">TROCAR DE CONTA</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/suporte.html">SUPORTE</a>
+                  <a class="nav-link" href="/login.html">SAIR</a>
                 </li>
               </ul>
             </div>
@@ -88,11 +81,11 @@
       </div>
 
       <nav class="header_links">
-        <a href="/inicio.html">INICIO</a>
-        <a href="">SUA PLAYLIST</a>
         <a href="/artistasAPI.html">ARTISTAS</a>
+        <a href="">PLAYLIST</a>
+        <a href="/inicio.html">INÍCIO</a>
         <a id="linhaHorizontal"></a>
-        <a href="login.html">TROCAR DE CONTA</a>
+        <a href="login.html">SAIR</a>
       </nav>
     </header>
 
@@ -102,7 +95,7 @@
         <input
           type="text"
           id="searchInput"
-          placeholder="Buscar artistas"
+          placeholder="BUSCAR MÚSICA"
         /><br />
         <button id="pesquisa">BUSCAR</button>
       </div>
@@ -150,7 +143,7 @@
       <div>
         <h4>ÚTEIS</h4>
         <br />
-        <a href="">SUPORTE</a><br />
+        <a href="/suporte.html">SUPORTE</a><br />
         <a href="">APP MÓVEL</a>
       </div>
       <div>
