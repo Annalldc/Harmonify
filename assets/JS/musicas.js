@@ -1,5 +1,3 @@
-alert("Bem-vindo ao HARMONIFY");
-
 document.addEventListener("DOMContentLoaded", function () {
   // Função de pesquisa de artistas
   async function searchArtists() {
