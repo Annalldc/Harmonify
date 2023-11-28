@@ -1,15 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
 body {
-  font-family: "Poppins", sans-serif;
   background-color: #000;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   color: aliceblue;
+  font-family: "Baloo 2", sans-serif;
   justify-content: space-around;
 }
 
 header {
-  font-family: "Poppins", sans-serif;
+  font-family: "Baloo 2", sans-serif;
   background-color: #141313;
   display: flex;
   align-items: center;
@@ -76,7 +76,7 @@ nav.navbar.fixed-top {
   color: #d9d9d9;
   font-size: 17px;
 }
-#bordas {
+#bordas{
   text-align: center;
 }
 input {
@@ -138,16 +138,6 @@ input {
   color: #d9d9d9;
   padding-top: 3rem;
   cursor: pointer;
-}
-.play-symbol {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 3rem;
-  color: #e11456;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
 }
 
 .center {
