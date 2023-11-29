@@ -2,13 +2,84 @@
   margin: 0;
   box-sizing: border-box;
   color: #d9d9d9;
+  flex-wrap: wrap;
 }
 
 body {
   background-color: #000000;
   font-family: "Baloo 2", sans-serif;
+  
 }
 
+.container1 {
+  max-width: 1150px;
+  margin: 0 auto; /* Centraliza a div .container1 */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container1 .card {
+  position: relative;
+  width: 250px;
+  background-color: whitesmoke;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  transition: 0.5s;
+  text-align: center;
+  overflow: hidden; /* Mantenha o overflow:hidden aqui se desejar cortar a imagem fora do contêiner */
+}
+
+.container1 .card img {
+  
+  height: auto;
+   /* Isso mantém a proporção da imagem e a ajusta dentro do contêiner */
+}
+
+.container1 .card .content1 {
+  padding: 10vh;
+  text-align: center;
+  position: relative;
+  z-index: 1; /* Certifica-se de que o texto está acima da imagem */
+}
+
+.container1 .card .content1 p {
+  color: #e15456;
+  transition: 0.5s;
+}
+
+.container1 .card .content1 a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 25px;
+  background-color: #e11456;
+  ;
+  color: wheat;
+  text-decoration: none;
+  transition: 0.5s;
+  outline: none;
+  border-radius: 40px;
+  margin-top: 20px;
+}
+
+.container1 .card:hover {
+  background-color: rgb(195, 186, 186);
+  color: white;
+}
+
+@media only screen and (max-width: 480px) {
+  .container1 .card {
+    width: calc(100% - 40px); /* Reduz a largura do cartão para 100% - 40px de margem */
+    margin: 10px; /* Adapte a margem conforme necessário */
+  }
+
+  .container1 .card .content1 {
+    padding: 5vh; /* Reduz o padding do conteúdo para se adequar a telas menores */
+  }
+}
 .banner {
   width: 100%;
   max-height: 500px; /* Ajuste conforme necessário */
