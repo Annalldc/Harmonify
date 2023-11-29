@@ -33,21 +33,23 @@ body {
 }
 
 .container1 .card img {
-  
+  width: auto;
   height: auto;
+  
    /* Isso mantém a proporção da imagem e a ajusta dentro do contêiner */
 }
 
 .container1 .card .content1 {
-  padding: 10vh;
+  padding: 10px;
   text-align: center;
   position: relative;
   z-index: 1; /* Certifica-se de que o texto está acima da imagem */
 }
 
 .container1 .card .content1 p {
-  color: #e15456;
+  color: #000000;
   transition: 0.5s;
+
 }
 
 .container1 .card .content1 a {
@@ -136,7 +138,7 @@ li a:hover {
 }
 
 button:hover {
-  background: rgb(0, 192, 226);
+  background: #e11456;
   transition: 0.5s;
 }
 button:hover {
@@ -166,7 +168,7 @@ button:hover {
   margin: -12px;
 }
 .a {
-  color: #000000;
+  color: white;
   font-size: 1em;
   text-decoration: none;
   align-items: center;
@@ -174,6 +176,7 @@ button:hover {
   padding: 8px 20px;
   border: 1px solid;
   border-radius: 40px;
+  border: none;
 }
 header {
   font-family: "Baloo 2", sans-serif;
@@ -392,3 +395,20 @@ footer p {
     display: none !important;
   }
 }
+
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container1 .card {
+  width: 250px;
+  background-color: whitesmoke;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  text-align: center;
+}
+
