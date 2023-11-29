@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Open+Sans:wght@300&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 body {
   background-color: #000;
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   color: aliceblue;
+  font-family: "Baloo 2", sans-serif;
   justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
-  font-family: "Poppins", sans-serif;
+  font-family: "Baloo 2", sans-serif;
   background-color: #141313;
   display: flex;
   align-items: center;
@@ -46,7 +48,10 @@ header a {
 .header_links {
   margin-left: auto;
 }
-
+#container{
+  flex: 1;
+  display: grid;
+}
 #linhaHorizontal {
   border-right: 1px solid white;
   padding: 3rem;
@@ -57,7 +62,10 @@ header a {
   margin-right: 50px;
   transition: transform 10000s;
 }
-
+#container{
+  flex: 1;
+  display: grid;
+}
 nav.navbar.fixed-top {
   display: none;
 }
@@ -81,7 +89,6 @@ nav.navbar.fixed-top {
   text-align: center;
 }
 input {
-  font-family: "Poppins", sans-serif;
   border-radius: 2rem;
   margin-bottom: 0.5rem;
   padding: 1.1rem;
