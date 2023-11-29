@@ -6,6 +6,9 @@ body {
   color: aliceblue;
   font-family: "Baloo 2", sans-serif;
   justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -45,7 +48,10 @@ header a {
 .header_links {
   margin-left: auto;
 }
-
+#container{
+  flex: 1;
+  display: grid;
+}
 #linhaHorizontal {
   border-right: 1px solid white;
   padding: 3rem;
@@ -56,7 +62,10 @@ header a {
   margin-right: 50px;
   transition: transform 10000s;
 }
-
+#container{
+  flex: 1;
+  display: grid;
+}
 nav.navbar.fixed-top {
   display: none;
 }
