@@ -10,6 +10,15 @@ body {
   font-family: "Baloo 2", sans-serif;
   
 }
+.sc-8994cb1-0 sc-8994cb1-12 jXJXVW dVINGA{
+  align-items: center;
+  text-align: center;
+}
+ul,ol,li{
+  text-align: center;
+   color: #000;
+   list-style: none;
+}
 
 .container1 {
   max-width: 1150px;
@@ -30,12 +39,14 @@ body {
   border-radius: 20px;
   transition: 0.5s;
   text-align: center;
+  color: #000000;
   overflow: hidden; /* Mantenha o overflow:hidden aqui se desejar cortar a imagem fora do contêiner */
 }
 
 .container1 .card img {
   width: auto;
   height: auto;
+  color: #000000;
   
    /* Isso mantém a proporção da imagem e a ajusta dentro do contêiner */
 }
@@ -44,6 +55,7 @@ body {
   padding: 10px;
   text-align: center;
   position: relative;
+  color: #000000;
   z-index: 1; /* Certifica-se de que o texto está acima da imagem */
 }
 
@@ -58,7 +70,7 @@ body {
   display: inline-block;
   padding: 10px 25px;
   background-color: #e11456;
-  ;
+  color: #000000;
   color: wheat;
   text-decoration: none;
   transition: 0.5s;
@@ -69,7 +81,7 @@ body {
 
 .container1 .card:hover {
   background-color: rgb(195, 186, 186);
-  color: white;
+   color: #000000;
 }
 
 @media only screen and (max-width: 480px) {
@@ -164,7 +176,9 @@ button:hover {
 .card-text {
   color: black;
 }
-
+.card{
+  color: #000000;
+}
 .row {
   margin: -12px;
 }
