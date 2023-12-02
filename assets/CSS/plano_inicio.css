@@ -14,11 +14,7 @@ body {
   align-items: center;
   text-align: center;
 }
-ul,ol,li{
-  text-align: center;
-   color: #000;
-   list-style: none;
-}
+
 
 .container1 {
   max-width: 1150px;
@@ -245,6 +241,7 @@ header a {
 
 nav.navbar.fixed-top {
   display: none;
+ color: #d9d9d9;
 }
 .offcanvas-body {
   background-color: #000000;
