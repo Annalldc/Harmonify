@@ -170,7 +170,7 @@ button:hover {
 }
 
 .card-text {
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .card{
   color: #000000;
@@ -427,3 +427,10 @@ h3{
   text-align: center;
 }
 
+p.card-text {
+  color: white
+}
+
+.card-text2 {
+  color: black;
+}
