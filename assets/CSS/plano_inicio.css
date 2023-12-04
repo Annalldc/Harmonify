@@ -15,15 +15,18 @@ body {
 .sc-8994cb1-0 sc-8994cb1-12 jXJXVW dVINGA{
   align-items: center;
   text-align: center;
+  margin-right: 150px;
 }
-
+ li{
+  text-align: center;
+ }
 
 .container1 {
   max-width: 1150px;
   margin: 0 auto; /* Centraliza a div .container1 */
   padding: 20px;
   display: flex;
-  align-items: center;
+  text-align: center;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -31,13 +34,13 @@ body {
 .container1 .card {
   position: relative;
   width: 250px;
-  background-color: whitesmoke;
   margin: 20px;
   border: 1px solid black;
   border-radius: 20px;
   transition: 0.5s;
   text-align: center;
   color: #000000;
+  
   overflow: hidden; /* Mantenha o overflow:hidden aqui se desejar cortar a imagem fora do contêiner */
 }
 
@@ -51,7 +54,7 @@ body {
 
 .container1 .card .content1 {
   padding: 10px;
-  text-align: center;
+
   position: relative;
   color: #000000;
   z-index: 1; /* Certifica-se de que o texto está acima da imagem */
@@ -60,9 +63,12 @@ body {
 .container1 .card .content1 p {
   color: #000000;
   transition: 0.5s;
+ 
 
 }
-
+.p{
+  text-align: center;
+}
 .container1 .card .content1 a {
   position: relative;
   display: inline-block;
@@ -75,6 +81,7 @@ body {
   outline: none;
   border-radius: 40px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .container1 .card:hover {
@@ -89,6 +96,8 @@ body {
   }
 
   .container1 .card .content1 {
+    text-align: center;
+    align-items: center;
     padding: 5vh; /* Reduz o padding do conteúdo para se adequar a telas menores */
   }
 }
@@ -133,7 +142,10 @@ li a:hover {
   background: white;
   transition: 0.6s;
 }
-
+ul{
+  text-align: center;
+  margin-right: 15px;
+}
 .content {
   width: 100%;
   position: absolute;
